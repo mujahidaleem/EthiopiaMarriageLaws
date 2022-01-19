@@ -1,0 +1,1342 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\MDW615-CAF\Downloads\Untitled.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}12 Mar 2021, 01:25:46
+
+{com}. import excel "C:\Users\MDW615-CAF\Downloads\final dataset (4).xlsx", sheet("2000_2016") firstrow
+{res}
+{com}. reg Value Reform G H I J K L M AgeofFirstMarriage
+{txt}note: H omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    58.87
+{txt}       Model {c |} {res} 36849.7022         8  4606.21277   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3834.02887        49  78.2454872   {txt}R-squared       ={res}    0.9058
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8904
+{txt}       Total {c |} {res}  40683.731        57  713.749667   {txt}Root MSE        =   {res} 8.8456
+
+{txt}{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}             Value{col 20}{c |}      Coef.{col 32}   Std. Err.{col 44}      t{col 52}   P>|t|{col 60}     [95% Con{col 73}f. Interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 12}Reform {c |}{col 20}{res}{space 2}-8.524138{col 32}{space 2} 2.322981{col 43}{space 1}   -3.67{col 52}{space 3}0.001{col 60}{space 4}-13.19234{col 73}{space 3}-3.855933
+{txt}{space 17}G {c |}{col 20}{res}{space 2}-14.15419{col 32}{space 2} 7.285797{col 43}{space 1}   -1.94{col 52}{space 3}0.058{col 60}{space 4}-28.79554{col 73}{space 3} .4871727
+{txt}{space 17}H {c |}{col 20}{res}{space 2}        0{col 32}{txt}  (omitted)
+{space 17}I {c |}{col 20}{res}{space 2} 6.274912{col 32}{space 2} 4.644267{col 43}{space 1}    1.35{col 52}{space 3}0.183{col 60}{space 4}-3.058091{col 73}{space 3} 15.60792
+{txt}{space 17}J {c |}{col 20}{res}{space 2} 15.73491{col 32}{space 2} 4.644267{col 43}{space 1}    3.39{col 52}{space 3}0.001{col 60}{space 4} 6.401909{col 73}{space 3} 25.06792
+{txt}{space 17}K {c |}{col 20}{res}{space 2} 15.73491{col 32}{space 2} 4.644267{col 43}{space 1}    3.39{col 52}{space 3}0.001{col 60}{space 4} 6.401909{col 73}{space 3} 25.06792
+{txt}{space 17}L {c |}{col 20}{res}{space 2} 19.76491{col 32}{space 2} 4.644267{col 43}{space 1}    4.26{col 52}{space 3}0.000{col 60}{space 4} 10.43191{col 73}{space 3} 29.09792
+{txt}{space 17}M {c |}{col 20}{res}{space 2} 18.41491{col 32}{space 2} 4.644267{col 43}{space 1}    3.97{col 52}{space 3}0.000{col 60}{space 4} 9.081909{col 73}{space 3} 27.74792
+{txt}AgeofFirstMarriage {c |}{col 20}{res}{space 2} 6.242181{col 32}{space 2} .3595277{col 43}{space 1}   17.36{col 52}{space 3}0.000{col 60}{space 4} 5.519683{col 73}{space 3} 6.964679
+{txt}{space 13}_cons {c |}{col 20}{res}{space 2}-65.16646{col 32}{space 2}  7.39821{col 43}{space 1}   -8.81{col 52}{space 3}0.000{col 60}{space 4}-80.03371{col 73}{space 3} -50.2992
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform G H I J K L M Value
+{txt}note: L omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}AgeofFirst~e{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}Reform {c |}{col 14}{res}{space 2} 1.174633{col 26}{space 2} .3517147{col 37}{space 1}    3.34{col 46}{space 3}0.002{col 54}{space 4} .4678362{col 67}{space 3} 1.881431
+{txt}{space 11}G {c |}{col 14}{res}{space 2} 3.974969{col 26}{space 2} 1.141757{col 37}{space 1}    3.48{col 46}{space 3}0.001{col 54}{space 4} 1.680521{col 67}{space 3} 6.269416
+{txt}{space 11}H {c |}{col 14}{res}{space 2}  2.39737{col 26}{space 2} .7313424{col 37}{space 1}    3.28{col 46}{space 3}0.002{col 54}{space 4} .9276819{col 67}{space 3} 3.867057
+{txt}{space 11}I {c |}{col 14}{res}{space 2} 1.858933{col 26}{space 2} .5974355{col 37}{space 1}    3.11{col 46}{space 3}0.003{col 54}{space 4} .6583417{col 67}{space 3} 3.059525
+{txt}{space 11}J {c |}{col 14}{res}{space 2} .5553374{col 26}{space 2} .5886329{col 37}{space 1}    0.94{col 46}{space 3}0.350{col 54}{space 4}-.6275647{col 67}{space 3} 1.738239
+{txt}{space 11}K {c |}{col 14}{res}{space 2} .5553374{col 26}{space 2} .5886329{col 37}{space 1}    0.94{col 46}{space 3}0.350{col 54}{space 4}-.6275647{col 67}{space 3} 1.738239
+{txt}{space 11}L {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (omitted)
+{space 11}M {c |}{col 14}{res}{space 2} .1860311{col 26}{space 2} .5878609{col 37}{space 1}    0.32{col 46}{space 3}0.753{col 54}{space 4}-.9953195{col 67}{space 3} 1.367382
+{txt}{space 7}Value {c |}{col 14}{res}{space 2} .1378008{col 26}{space 2} .0079368{col 37}{space 1}   17.36{col 46}{space 3}0.000{col 54}{space 4} .1218512{col 67}{space 3} .1537505
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 9.052816{col 26}{space 2} .7746412{col 37}{space 1}   11.69{col 46}{space 3}0.000{col 54}{space 4} 7.496116{col 67}{space 3} 10.60952
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform  Value
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(2, 55)        = {res}   120.26
+{txt}       Model {c |} {res} 551.873937         2  275.936969   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 126.195028        55  2.29445506   {txt}R-squared       ={res}    0.8139
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8071
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.5147
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}AgeofFirst~e{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}Reform {c |}{col 14}{res}{space 2} 1.005906{col 26}{space 2} .4030448{col 37}{space 1}    2.50{col 46}{space 3}0.016{col 54}{space 4} .1981866{col 67}{space 3} 1.813626
+{txt}{space 7}Value {c |}{col 14}{res}{space 2} .1180068{col 26}{space 2}  .007609{col 37}{space 1}   15.51{col 46}{space 3}0.000{col 54}{space 4} .1027581{col 67}{space 3} .1332556
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 11.36154{col 26}{space 2} .6002989{col 37}{space 1}   18.93{col 46}{space 3}0.000{col 54}{space 4} 10.15851{col 67}{space 3} 12.56456
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg Value Reform G H I J K L M AgeofFirstMarriage
+{txt}note: H omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    58.87
+{txt}       Model {c |} {res} 36849.7022         8  4606.21277   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3834.02887        49  78.2454872   {txt}R-squared       ={res}    0.9058
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8904
+{txt}       Total {c |} {res}  40683.731        57  713.749667   {txt}Root MSE        =   {res} 8.8456
+
+{txt}{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}             Value{col 20}{c |}      Coef.{col 32}   Std. Err.{col 44}      t{col 52}   P>|t|{col 60}     [95% Con{col 73}f. Interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 12}Reform {c |}{col 20}{res}{space 2}-8.524138{col 32}{space 2} 2.322981{col 43}{space 1}   -3.67{col 52}{space 3}0.001{col 60}{space 4}-13.19234{col 73}{space 3}-3.855933
+{txt}{space 17}G {c |}{col 20}{res}{space 2}-14.15419{col 32}{space 2} 7.285797{col 43}{space 1}   -1.94{col 52}{space 3}0.058{col 60}{space 4}-28.79554{col 73}{space 3} .4871727
+{txt}{space 17}H {c |}{col 20}{res}{space 2}        0{col 32}{txt}  (omitted)
+{space 17}I {c |}{col 20}{res}{space 2} 6.274912{col 32}{space 2} 4.644267{col 43}{space 1}    1.35{col 52}{space 3}0.183{col 60}{space 4}-3.058091{col 73}{space 3} 15.60792
+{txt}{space 17}J {c |}{col 20}{res}{space 2} 15.73491{col 32}{space 2} 4.644267{col 43}{space 1}    3.39{col 52}{space 3}0.001{col 60}{space 4} 6.401909{col 73}{space 3} 25.06792
+{txt}{space 17}K {c |}{col 20}{res}{space 2} 15.73491{col 32}{space 2} 4.644267{col 43}{space 1}    3.39{col 52}{space 3}0.001{col 60}{space 4} 6.401909{col 73}{space 3} 25.06792
+{txt}{space 17}L {c |}{col 20}{res}{space 2} 19.76491{col 32}{space 2} 4.644267{col 43}{space 1}    4.26{col 52}{space 3}0.000{col 60}{space 4} 10.43191{col 73}{space 3} 29.09792
+{txt}{space 17}M {c |}{col 20}{res}{space 2} 18.41491{col 32}{space 2} 4.644267{col 43}{space 1}    3.97{col 52}{space 3}0.000{col 60}{space 4} 9.081909{col 73}{space 3} 27.74792
+{txt}AgeofFirstMarriage {c |}{col 20}{res}{space 2} 6.242181{col 32}{space 2} .3595277{col 43}{space 1}   17.36{col 52}{space 3}0.000{col 60}{space 4} 5.519683{col 73}{space 3} 6.964679
+{txt}{space 13}_cons {c |}{col 20}{res}{space 2}-65.16646{col 32}{space 2}  7.39821{col 43}{space 1}   -8.81{col 52}{space 3}0.000{col 60}{space 4}-80.03371{col 73}{space 3} -50.2992
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform G H I J K L M Value
+{txt}note: L omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}AgeofFirst~e{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}Reform {c |}{col 14}{res}{space 2} 1.174633{col 26}{space 2} .3517147{col 37}{space 1}    3.34{col 46}{space 3}0.002{col 54}{space 4} .4678362{col 67}{space 3} 1.881431
+{txt}{space 11}G {c |}{col 14}{res}{space 2} 3.974969{col 26}{space 2} 1.141757{col 37}{space 1}    3.48{col 46}{space 3}0.001{col 54}{space 4} 1.680521{col 67}{space 3} 6.269416
+{txt}{space 11}H {c |}{col 14}{res}{space 2}  2.39737{col 26}{space 2} .7313424{col 37}{space 1}    3.28{col 46}{space 3}0.002{col 54}{space 4} .9276819{col 67}{space 3} 3.867057
+{txt}{space 11}I {c |}{col 14}{res}{space 2} 1.858933{col 26}{space 2} .5974355{col 37}{space 1}    3.11{col 46}{space 3}0.003{col 54}{space 4} .6583417{col 67}{space 3} 3.059525
+{txt}{space 11}J {c |}{col 14}{res}{space 2} .5553374{col 26}{space 2} .5886329{col 37}{space 1}    0.94{col 46}{space 3}0.350{col 54}{space 4}-.6275647{col 67}{space 3} 1.738239
+{txt}{space 11}K {c |}{col 14}{res}{space 2} .5553374{col 26}{space 2} .5886329{col 37}{space 1}    0.94{col 46}{space 3}0.350{col 54}{space 4}-.6275647{col 67}{space 3} 1.738239
+{txt}{space 11}L {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (omitted)
+{space 11}M {c |}{col 14}{res}{space 2} .1860311{col 26}{space 2} .5878609{col 37}{space 1}    0.32{col 46}{space 3}0.753{col 54}{space 4}-.9953195{col 67}{space 3} 1.367382
+{txt}{space 7}Value {c |}{col 14}{res}{space 2} .1378008{col 26}{space 2} .0079368{col 37}{space 1}   17.36{col 46}{space 3}0.000{col 54}{space 4} .1218512{col 67}{space 3} .1537505
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 9.052816{col 26}{space 2} .7746412{col 37}{space 1}   11.69{col 46}{space 3}0.000{col 54}{space 4} 7.496116{col 67}{space 3} 10.60952
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg Value Reform G H I J K L M AgeofFirstMarriage
+{txt}note: H omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    58.87
+{txt}       Model {c |} {res} 36849.7022         8  4606.21277   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3834.02887        49  78.2454872   {txt}R-squared       ={res}    0.9058
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8904
+{txt}       Total {c |} {res}  40683.731        57  713.749667   {txt}Root MSE        =   {res} 8.8456
+
+{txt}{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}             Value{col 20}{c |}      Coef.{col 32}   Std. Err.{col 44}      t{col 52}   P>|t|{col 60}     [95% Con{col 73}f. Interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 12}Reform {c |}{col 20}{res}{space 2}-8.524138{col 32}{space 2} 2.322981{col 43}{space 1}   -3.67{col 52}{space 3}0.001{col 60}{space 4}-13.19234{col 73}{space 3}-3.855933
+{txt}{space 17}G {c |}{col 20}{res}{space 2}-14.15419{col 32}{space 2} 7.285797{col 43}{space 1}   -1.94{col 52}{space 3}0.058{col 60}{space 4}-28.79554{col 73}{space 3} .4871727
+{txt}{space 17}H {c |}{col 20}{res}{space 2}        0{col 32}{txt}  (omitted)
+{space 17}I {c |}{col 20}{res}{space 2} 6.274912{col 32}{space 2} 4.644267{col 43}{space 1}    1.35{col 52}{space 3}0.183{col 60}{space 4}-3.058091{col 73}{space 3} 15.60792
+{txt}{space 17}J {c |}{col 20}{res}{space 2} 15.73491{col 32}{space 2} 4.644267{col 43}{space 1}    3.39{col 52}{space 3}0.001{col 60}{space 4} 6.401909{col 73}{space 3} 25.06792
+{txt}{space 17}K {c |}{col 20}{res}{space 2} 15.73491{col 32}{space 2} 4.644267{col 43}{space 1}    3.39{col 52}{space 3}0.001{col 60}{space 4} 6.401909{col 73}{space 3} 25.06792
+{txt}{space 17}L {c |}{col 20}{res}{space 2} 19.76491{col 32}{space 2} 4.644267{col 43}{space 1}    4.26{col 52}{space 3}0.000{col 60}{space 4} 10.43191{col 73}{space 3} 29.09792
+{txt}{space 17}M {c |}{col 20}{res}{space 2} 18.41491{col 32}{space 2} 4.644267{col 43}{space 1}    3.97{col 52}{space 3}0.000{col 60}{space 4} 9.081909{col 73}{space 3} 27.74792
+{txt}AgeofFirstMarriage {c |}{col 20}{res}{space 2} 6.242181{col 32}{space 2} .3595277{col 43}{space 1}   17.36{col 52}{space 3}0.000{col 60}{space 4} 5.519683{col 73}{space 3} 6.964679
+{txt}{space 13}_cons {c |}{col 20}{res}{space 2}-65.16646{col 32}{space 2}  7.39821{col 43}{space 1}   -8.81{col 52}{space 3}0.000{col 60}{space 4}-80.03371{col 73}{space 3} -50.2992
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform G H I J K L M Value
+{txt}note: L omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}AgeofFirst~e{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}Reform {c |}{col 14}{res}{space 2} 1.174633{col 26}{space 2} .3517147{col 37}{space 1}    3.34{col 46}{space 3}0.002{col 54}{space 4} .4678362{col 67}{space 3} 1.881431
+{txt}{space 11}G {c |}{col 14}{res}{space 2} 3.974969{col 26}{space 2} 1.141757{col 37}{space 1}    3.48{col 46}{space 3}0.001{col 54}{space 4} 1.680521{col 67}{space 3} 6.269416
+{txt}{space 11}H {c |}{col 14}{res}{space 2}  2.39737{col 26}{space 2} .7313424{col 37}{space 1}    3.28{col 46}{space 3}0.002{col 54}{space 4} .9276819{col 67}{space 3} 3.867057
+{txt}{space 11}I {c |}{col 14}{res}{space 2} 1.858933{col 26}{space 2} .5974355{col 37}{space 1}    3.11{col 46}{space 3}0.003{col 54}{space 4} .6583417{col 67}{space 3} 3.059525
+{txt}{space 11}J {c |}{col 14}{res}{space 2} .5553374{col 26}{space 2} .5886329{col 37}{space 1}    0.94{col 46}{space 3}0.350{col 54}{space 4}-.6275647{col 67}{space 3} 1.738239
+{txt}{space 11}K {c |}{col 14}{res}{space 2} .5553374{col 26}{space 2} .5886329{col 37}{space 1}    0.94{col 46}{space 3}0.350{col 54}{space 4}-.6275647{col 67}{space 3} 1.738239
+{txt}{space 11}L {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (omitted)
+{space 11}M {c |}{col 14}{res}{space 2} .1860311{col 26}{space 2} .5878609{col 37}{space 1}    0.32{col 46}{space 3}0.753{col 54}{space 4}-.9953195{col 67}{space 3} 1.367382
+{txt}{space 7}Value {c |}{col 14}{res}{space 2} .1378008{col 26}{space 2} .0079368{col 37}{space 1}   17.36{col 46}{space 3}0.000{col 54}{space 4} .1218512{col 67}{space 3} .1537505
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 9.052816{col 26}{space 2} .7746412{col 37}{space 1}   11.69{col 46}{space 3}0.000{col 54}{space 4} 7.496116{col 67}{space 3} 10.60952
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. tab G value
+{err}variable {bf}value{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. tab G Value
+
+           {txt}{c |}                               Value
+     15-19 {c |}       5.7       14.1       14.4       19.1       20.5       24.5 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         0          1          0          1          1          1 {txt}{c |}{res}        56 
+{txt}         1 {c |}{res}         1          0          1          0          0          0 {txt}{c |}{res}         2 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     15-19 {c |}      26.8       27.3       29.1       30.6       31.9       33.4 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        56 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}         2 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     15-19 {c |}      34.2       35.1       40.3       49.1       49.3       56.7 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        56 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}         2 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     15-19 {c |}      57.8       60.2       61.3         64       64.7       65.5 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        56 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}         2 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     15-19 {c |}        66       71.2       73.2       73.4         74         75 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          2          1 {txt}{c |}{res}        56 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}         2 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          2          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     15-19 {c |}      75.7       77.7       79.4       81.1       81.8       82.8 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          2          1          1          1          1 {txt}{c |}{res}        56 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}         2 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          2          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     15-19 {c |}      83.2       84.6       84.7       84.8       85.2       87.6 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        56 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}         2 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     15-19 {c |}      88.3       88.9       90.5       90.8       90.9       91.4 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        56 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}         2 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     15-19 {c |}        92       92.8       94.9       95.9         96       96.7 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        56 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}         2 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}         Value
+     15-19 {c |}      98.6       98.8 {c |}     Total
+{hline 11}{c +}{hline 22}{c +}{hline 10}
+         0 {c |}{res}         1          1 {txt}{c |}{res}        56 
+{txt}         1 {c |}{res}         0          0 {txt}{c |}{res}         2 
+{txt}{hline 11}{c +}{hline 22}{c +}{hline 10}
+     Total {c |}{res}         1          1 {txt}{c |}{res}        58 
+
+
+{com}. tab H Value
+
+           {txt}{c |}                               Value
+     20-24 {c |}       5.7       14.1       14.4       19.1       20.5       24.5 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          0          1          0          1          1 {txt}{c |}{res}        52 
+{txt}         1 {c |}{res}         0          1          0          1          0          0 {txt}{c |}{res}         6 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     20-24 {c |}      26.8       27.3       29.1       30.6       31.9       33.4 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        52 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}         6 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     20-24 {c |}      34.2       35.1       40.3       49.1       49.3       56.7 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          0          0          1          1 {txt}{c |}{res}        52 
+{txt}         1 {c |}{res}         0          0          1          1          0          0 {txt}{c |}{res}         6 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     20-24 {c |}      57.8       60.2       61.3         64       64.7       65.5 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         0          1          1          1          0          1 {txt}{c |}{res}        52 
+{txt}         1 {c |}{res}         1          0          0          0          1          0 {txt}{c |}{res}         6 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     20-24 {c |}        66       71.2       73.2       73.4         74         75 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          2          1 {txt}{c |}{res}        52 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}         6 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          2          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     20-24 {c |}      75.7       77.7       79.4       81.1       81.8       82.8 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          2          1          1          1          1 {txt}{c |}{res}        52 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}         6 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          2          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     20-24 {c |}      83.2       84.6       84.7       84.8       85.2       87.6 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        52 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}         6 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     20-24 {c |}      88.3       88.9       90.5       90.8       90.9       91.4 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        52 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}         6 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     20-24 {c |}        92       92.8       94.9       95.9         96       96.7 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        52 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}         6 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}         Value
+     20-24 {c |}      98.6       98.8 {c |}     Total
+{hline 11}{c +}{hline 22}{c +}{hline 10}
+         0 {c |}{res}         1          1 {txt}{c |}{res}        52 
+{txt}         1 {c |}{res}         0          0 {txt}{c |}{res}         6 
+{txt}{hline 11}{c +}{hline 22}{c +}{hline 10}
+     Total {c |}{res}         1          1 {txt}{c |}{res}        58 
+
+
+{com}. tab L Value
+
+           {txt}{c |}                               Value
+     40-44 {c |}       5.7       14.1       14.4       19.1       20.5       24.5 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        48 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}        10 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     40-44 {c |}      26.8       27.3       29.1       30.6       31.9       33.4 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          0          0 {txt}{c |}{res}        48 
+{txt}         1 {c |}{res}         0          0          0          0          1          1 {txt}{c |}{res}        10 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     40-44 {c |}      34.2       35.1       40.3       49.1       49.3       56.7 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        48 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}        10 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     40-44 {c |}      57.8       60.2       61.3         64       64.7       65.5 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        48 
+{txt}         1 {c |}{res}         0          0          0          0          0          0 {txt}{c |}{res}        10 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     40-44 {c |}        66       71.2       73.2       73.4         74         75 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         0          1          1          1          2          1 {txt}{c |}{res}        48 
+{txt}         1 {c |}{res}         1          0          0          0          0          0 {txt}{c |}{res}        10 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          2          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     40-44 {c |}      75.7       77.7       79.4       81.1       81.8       82.8 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          0          1          1          1 {txt}{c |}{res}        48 
+{txt}         1 {c |}{res}         0          1          1          0          0          0 {txt}{c |}{res}        10 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          2          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     40-44 {c |}      83.2       84.6       84.7       84.8       85.2       87.6 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          0          1          1          1 {txt}{c |}{res}        48 
+{txt}         1 {c |}{res}         0          0          1          0          0          0 {txt}{c |}{res}        10 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     40-44 {c |}      88.3       88.9       90.5       90.8       90.9       91.4 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         1          1          1          1          1          0 {txt}{c |}{res}        48 
+{txt}         1 {c |}{res}         0          0          0          0          0          1 {txt}{c |}{res}        10 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}                               Value
+     40-44 {c |}        92       92.8       94.9       95.9         96       96.7 {c |}     Total
+{hline 11}{c +}{hline 66}{c +}{hline 10}
+         0 {c |}{res}         0          1          1          1          1          0 {txt}{c |}{res}        48 
+{txt}         1 {c |}{res}         1          0          0          0          0          1 {txt}{c |}{res}        10 
+{txt}{hline 11}{c +}{hline 66}{c +}{hline 10}
+     Total {c |}{res}         1          1          1          1          1          1 {txt}{c |}{res}        58 
+
+
+           {txt}{c |}         Value
+     40-44 {c |}      98.6       98.8 {c |}     Total
+{hline 11}{c +}{hline 22}{c +}{hline 10}
+         0 {c |}{res}         0          1 {txt}{c |}{res}        48 
+{txt}         1 {c |}{res}         1          0 {txt}{c |}{res}        10 
+{txt}{hline 11}{c +}{hline 22}{c +}{hline 10}
+     Total {c |}{res}         1          1 {txt}{c |}{res}        58 
+
+
+{com}. reg AgeofFirstMarriage Reform G H I J K L M
+{txt}note: M omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        70
+{txt}{hline 13}{c +}{hline 34}   F(7, 62)        = {res}     0.00
+{txt}       Model {c |} {res}          0         7           0   {txt}Prob > F        ={res}    1.0000
+{txt}    Residual {c |} {res}        812        62  13.0967742   {txt}R-squared       ={res}    0.0000
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}   -0.1129
+{txt}       Total {c |} {res}        812        69  11.7681159   {txt}Root MSE        =   {res} 3.6189
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}AgeofFirst~e{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}Reform {c |}{col 14}{res}{space 2}-1.41e-34{col 26}{space 2} .8650937{col 37}{space 1}   -0.00{col 46}{space 3}1.000{col 54}{space 4}-1.729298{col 67}{space 3} 1.729298
+{txt}{space 11}G {c |}{col 14}{res}{space 2} 1.33e-16{col 26}{space 2} 1.618442{col 37}{space 1}    0.00{col 46}{space 3}1.000{col 54}{space 4} -3.23522{col 67}{space 3}  3.23522
+{txt}{space 11}H {c |}{col 14}{res}{space 2} 1.33e-16{col 26}{space 2} 1.618442{col 37}{space 1}    0.00{col 46}{space 3}1.000{col 54}{space 4} -3.23522{col 67}{space 3}  3.23522
+{txt}{space 11}I {c |}{col 14}{res}{space 2} 4.44e-17{col 26}{space 2} 1.618442{col 37}{space 1}    0.00{col 46}{space 3}1.000{col 54}{space 4} -3.23522{col 67}{space 3}  3.23522
+{txt}{space 11}J {c |}{col 14}{res}{space 2} 4.44e-17{col 26}{space 2} 1.618442{col 37}{space 1}    0.00{col 46}{space 3}1.000{col 54}{space 4} -3.23522{col 67}{space 3}  3.23522
+{txt}{space 11}K {c |}{col 14}{res}{space 2} 2.22e-17{col 26}{space 2} 1.618442{col 37}{space 1}    0.00{col 46}{space 3}1.000{col 54}{space 4} -3.23522{col 67}{space 3}  3.23522
+{txt}{space 11}L {c |}{col 14}{res}{space 2} 8.88e-17{col 26}{space 2} 1.618442{col 37}{space 1}    0.00{col 46}{space 3}1.000{col 54}{space 4} -3.23522{col 67}{space 3}  3.23522
+{txt}{space 11}M {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (omitted)
+{space 7}_cons {c |}{col 14}{res}{space 2}       20{col 26}{space 2} 1.223427{col 37}{space 1}   16.35{col 46}{space 3}0.000{col 54}{space 4}  17.5544{col 67}{space 3}  22.4456
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform G H I J K L M Value
+{txt}note: L omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}AgeofFirst~e{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}Reform {c |}{col 14}{res}{space 2} 1.174633{col 26}{space 2} .3517147{col 37}{space 1}    3.34{col 46}{space 3}0.002{col 54}{space 4} .4678362{col 67}{space 3} 1.881431
+{txt}{space 11}G {c |}{col 14}{res}{space 2} 3.974969{col 26}{space 2} 1.141757{col 37}{space 1}    3.48{col 46}{space 3}0.001{col 54}{space 4} 1.680521{col 67}{space 3} 6.269416
+{txt}{space 11}H {c |}{col 14}{res}{space 2}  2.39737{col 26}{space 2} .7313424{col 37}{space 1}    3.28{col 46}{space 3}0.002{col 54}{space 4} .9276819{col 67}{space 3} 3.867057
+{txt}{space 11}I {c |}{col 14}{res}{space 2} 1.858933{col 26}{space 2} .5974355{col 37}{space 1}    3.11{col 46}{space 3}0.003{col 54}{space 4} .6583417{col 67}{space 3} 3.059525
+{txt}{space 11}J {c |}{col 14}{res}{space 2} .5553374{col 26}{space 2} .5886329{col 37}{space 1}    0.94{col 46}{space 3}0.350{col 54}{space 4}-.6275647{col 67}{space 3} 1.738239
+{txt}{space 11}K {c |}{col 14}{res}{space 2} .5553374{col 26}{space 2} .5886329{col 37}{space 1}    0.94{col 46}{space 3}0.350{col 54}{space 4}-.6275647{col 67}{space 3} 1.738239
+{txt}{space 11}L {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (omitted)
+{space 11}M {c |}{col 14}{res}{space 2} .1860311{col 26}{space 2} .5878609{col 37}{space 1}    0.32{col 46}{space 3}0.753{col 54}{space 4}-.9953195{col 67}{space 3} 1.367382
+{txt}{space 7}Value {c |}{col 14}{res}{space 2} .1378008{col 26}{space 2} .0079368{col 37}{space 1}   17.36{col 46}{space 3}0.000{col 54}{space 4} .1218512{col 67}{space 3} .1537505
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 9.052816{col 26}{space 2} .7746412{col 37}{space 1}   11.69{col 46}{space 3}0.000{col 54}{space 4} 7.496116{col 67}{space 3} 10.60952
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform G H I J K L  Value
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}AgeofFirst~e{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}Reform {c |}{col 14}{res}{space 2} 1.174633{col 26}{space 2} .3517147{col 37}{space 1}    3.34{col 46}{space 3}0.002{col 54}{space 4} .4678362{col 67}{space 3} 1.881431
+{txt}{space 11}G {c |}{col 14}{res}{space 2} 3.788938{col 26}{space 2} 1.136947{col 37}{space 1}    3.33{col 46}{space 3}0.002{col 54}{space 4} 1.504158{col 67}{space 3} 6.073717
+{txt}{space 11}H {c |}{col 14}{res}{space 2} 2.211338{col 26}{space 2} .7274185{col 37}{space 1}    3.04{col 46}{space 3}0.004{col 54}{space 4} .7495363{col 67}{space 3} 3.673141
+{txt}{space 11}I {c |}{col 14}{res}{space 2} 1.672902{col 26}{space 2} .5956086{col 37}{space 1}    2.81{col 46}{space 3}0.007{col 54}{space 4}  .475982{col 67}{space 3} 2.869822
+{txt}{space 11}J {c |}{col 14}{res}{space 2} .3693063{col 26}{space 2}  .588148{col 37}{space 1}    0.63{col 46}{space 3}0.533{col 54}{space 4}-.8126214{col 67}{space 3} 1.551234
+{txt}{space 11}K {c |}{col 14}{res}{space 2} .3693063{col 26}{space 2}  .588148{col 37}{space 1}    0.63{col 46}{space 3}0.533{col 54}{space 4}-.8126214{col 67}{space 3} 1.551234
+{txt}{space 11}L {c |}{col 14}{res}{space 2}-.1860311{col 26}{space 2} .5878609{col 37}{space 1}   -0.32{col 46}{space 3}0.753{col 54}{space 4}-1.367382{col 67}{space 3} .9953195
+{txt}{space 7}Value {c |}{col 14}{res}{space 2} .1378008{col 26}{space 2} .0079368{col 37}{space 1}   17.36{col 46}{space 3}0.000{col 54}{space 4} .1218512{col 67}{space 3} .1537505
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 9.238847{col 26}{space 2} .7659452{col 37}{space 1}   12.06{col 46}{space 3}0.000{col 54}{space 4} 7.699623{col 67}{space 3} 10.77807
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform G H I J K L M Value
+{txt}note: L omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}AgeofFirst~e{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}Reform {c |}{col 14}{res}{space 2} 1.174633{col 26}{space 2} .3517147{col 37}{space 1}    3.34{col 46}{space 3}0.002{col 54}{space 4} .4678362{col 67}{space 3} 1.881431
+{txt}{space 11}G {c |}{col 14}{res}{space 2} 3.974969{col 26}{space 2} 1.141757{col 37}{space 1}    3.48{col 46}{space 3}0.001{col 54}{space 4} 1.680521{col 67}{space 3} 6.269416
+{txt}{space 11}H {c |}{col 14}{res}{space 2}  2.39737{col 26}{space 2} .7313424{col 37}{space 1}    3.28{col 46}{space 3}0.002{col 54}{space 4} .9276819{col 67}{space 3} 3.867057
+{txt}{space 11}I {c |}{col 14}{res}{space 2} 1.858933{col 26}{space 2} .5974355{col 37}{space 1}    3.11{col 46}{space 3}0.003{col 54}{space 4} .6583417{col 67}{space 3} 3.059525
+{txt}{space 11}J {c |}{col 14}{res}{space 2} .5553374{col 26}{space 2} .5886329{col 37}{space 1}    0.94{col 46}{space 3}0.350{col 54}{space 4}-.6275647{col 67}{space 3} 1.738239
+{txt}{space 11}K {c |}{col 14}{res}{space 2} .5553374{col 26}{space 2} .5886329{col 37}{space 1}    0.94{col 46}{space 3}0.350{col 54}{space 4}-.6275647{col 67}{space 3} 1.738239
+{txt}{space 11}L {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (omitted)
+{space 11}M {c |}{col 14}{res}{space 2} .1860311{col 26}{space 2} .5878609{col 37}{space 1}    0.32{col 46}{space 3}0.753{col 54}{space 4}-.9953195{col 67}{space 3} 1.367382
+{txt}{space 7}Value {c |}{col 14}{res}{space 2} .1378008{col 26}{space 2} .0079368{col 37}{space 1}   17.36{col 46}{space 3}0.000{col 54}{space 4} .1218512{col 67}{space 3} .1537505
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 9.052816{col 26}{space 2} .7746412{col 37}{space 1}   11.69{col 46}{space 3}0.000{col 54}{space 4} 7.496116{col 67}{space 3} 10.60952
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform G H I J K L M NeverMarried Value
+{txt}note: L omitted because of collinearity
+note: NeverMarried omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}AgeofFirst~e{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}Reform {c |}{col 14}{res}{space 2} 1.174633{col 26}{space 2} .3517147{col 37}{space 1}    3.34{col 46}{space 3}0.002{col 54}{space 4} .4678362{col 67}{space 3} 1.881431
+{txt}{space 11}G {c |}{col 14}{res}{space 2} 3.974969{col 26}{space 2} 1.141757{col 37}{space 1}    3.48{col 46}{space 3}0.001{col 54}{space 4} 1.680521{col 67}{space 3} 6.269416
+{txt}{space 11}H {c |}{col 14}{res}{space 2}  2.39737{col 26}{space 2} .7313424{col 37}{space 1}    3.28{col 46}{space 3}0.002{col 54}{space 4} .9276819{col 67}{space 3} 3.867057
+{txt}{space 11}I {c |}{col 14}{res}{space 2} 1.858933{col 26}{space 2} .5974355{col 37}{space 1}    3.11{col 46}{space 3}0.003{col 54}{space 4} .6583417{col 67}{space 3} 3.059525
+{txt}{space 11}J {c |}{col 14}{res}{space 2} .5553374{col 26}{space 2} .5886329{col 37}{space 1}    0.94{col 46}{space 3}0.350{col 54}{space 4}-.6275647{col 67}{space 3} 1.738239
+{txt}{space 11}K {c |}{col 14}{res}{space 2} .5553374{col 26}{space 2} .5886329{col 37}{space 1}    0.94{col 46}{space 3}0.350{col 54}{space 4}-.6275647{col 67}{space 3} 1.738239
+{txt}{space 11}L {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (omitted)
+{space 11}M {c |}{col 14}{res}{space 2} .1860311{col 26}{space 2} .5878609{col 37}{space 1}    0.32{col 46}{space 3}0.753{col 54}{space 4}-.9953195{col 67}{space 3} 1.367382
+{txt}NeverMarried {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (omitted)
+{space 7}Value {c |}{col 14}{res}{space 2} .1378008{col 26}{space 2} .0079368{col 37}{space 1}   17.36{col 46}{space 3}0.000{col 54}{space 4} .1218512{col 67}{space 3} .1537505
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 9.052816{col 26}{space 2} .7746412{col 37}{space 1}   11.69{col 46}{space 3}0.000{col 54}{space 4} 7.496116{col 67}{space 3} 10.60952
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. tab NeverMarried L
+
+     {txt}Never {c |}         40-44
+   Married {c |}         0          1 {c |}     Total
+{hline 11}{c +}{hline 22}{c +}{hline 10}
+         0 {c |}{res}        60         10 {txt}{c |}{res}        70 
+{txt}{hline 11}{c +}{hline 22}{c +}{hline 10}
+     Total {c |}{res}        60         10 {txt}{c |}{res}        70 
+
+
+{com}. reg AgeofFirstMarriage Reform G H I J K M Value
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}AgeofFirst~e{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}Reform {c |}{col 14}{res}{space 2} 1.174633{col 26}{space 2} .3517147{col 37}{space 1}    3.34{col 46}{space 3}0.002{col 54}{space 4} .4678362{col 67}{space 3} 1.881431
+{txt}{space 11}G {c |}{col 14}{res}{space 2} 3.974969{col 26}{space 2} 1.141757{col 37}{space 1}    3.48{col 46}{space 3}0.001{col 54}{space 4} 1.680521{col 67}{space 3} 6.269416
+{txt}{space 11}H {c |}{col 14}{res}{space 2}  2.39737{col 26}{space 2} .7313424{col 37}{space 1}    3.28{col 46}{space 3}0.002{col 54}{space 4} .9276819{col 67}{space 3} 3.867057
+{txt}{space 11}I {c |}{col 14}{res}{space 2} 1.858933{col 26}{space 2} .5974355{col 37}{space 1}    3.11{col 46}{space 3}0.003{col 54}{space 4} .6583417{col 67}{space 3} 3.059525
+{txt}{space 11}J {c |}{col 14}{res}{space 2} .5553374{col 26}{space 2} .5886329{col 37}{space 1}    0.94{col 46}{space 3}0.350{col 54}{space 4}-.6275647{col 67}{space 3} 1.738239
+{txt}{space 11}K {c |}{col 14}{res}{space 2} .5553374{col 26}{space 2} .5886329{col 37}{space 1}    0.94{col 46}{space 3}0.350{col 54}{space 4}-.6275647{col 67}{space 3} 1.738239
+{txt}{space 11}M {c |}{col 14}{res}{space 2} .1860311{col 26}{space 2} .5878609{col 37}{space 1}    0.32{col 46}{space 3}0.753{col 54}{space 4}-.9953195{col 67}{space 3} 1.367382
+{txt}{space 7}Value {c |}{col 14}{res}{space 2} .1378008{col 26}{space 2} .0079368{col 37}{space 1}   17.36{col 46}{space 3}0.000{col 54}{space 4} .1218512{col 67}{space 3} .1537505
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 9.052816{col 26}{space 2} .7746412{col 37}{space 1}   11.69{col 46}{space 3}0.000{col 54}{space 4} 7.496116{col 67}{space 3} 10.60952
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. rename G 15_19
+{res}{err}1 new variable name invalid
+{p 4 4 2}
+You attempted to rename {bf:G} to {bf:15_19}{err}.
+That is an invalid Stata variable name.
+{p_end}
+{txt}{search r(198), local:r(198);}
+
+{com}. rename G 15-19
+{res}{err}syntax error
+{p 4 4 2}
+In parsing {it:newname},
+either nothing or something invalid precedes the dash.
+The dash syntax is {it:varname}{bf:-}{it:varname},
+and the variable names cannot have wildcard characters
+in them.
+{p_end}
+{txt}{search r(198), local:r(198);}
+
+{com}. rename G 15_to_19
+{res}{err}1 new variable name invalid
+{p 4 4 2}
+You attempted to rename {bf:G} to {bf:15_to_19}{err}.
+That is an invalid Stata variable name.
+{p_end}
+{txt}{search r(198), local:r(198);}
+
+{com}. rename G 15 to 19
+{res}{err}syntax error
+    Syntax is
+        {bf:rename}  {it:oldname}    {it:newname}   [{bf:, renumber}[{bf:(}{it:#}{bf:)}] {bf:addnumber}[{bf:(}{it:#}{bf:)}] {bf:sort} ...]
+        {bf:rename (}{it:oldnames}{bf:) (}{it:newnames}{bf:)} [{bf:, renumber}[{bf:(}{it:#}{bf:)}] {bf:addnumber}[{bf:(}{it:#}{bf:)}] {bf:sort} ...]
+        {bf:rename}  {it:oldnames}              {bf:,} {{bf:upper}|{bf:lower}|{bf:proper}}
+{txt}{search r(198), local:r(198);}
+
+{com}. rename G "15_19"
+{res}{err}1 new variable name invalid
+{p 4 4 2}
+You attempted to rename {bf:G} to {bf:"15_19"}{err}.
+That is an invalid Stata variable name.
+{p_end}
+{txt}{search r(198), local:r(198);}
+
+{com}. rename G "age_15_19"
+{res}{err}"age_15_19 invalid name
+{txt}{search r(198), local:r(198);}
+
+{com}. rename G "age"
+{res}{err}"age invalid name
+{txt}{search r(198), local:r(198);}
+
+{com}. rename G age
+{res}
+{com}. rename age 15
+{res}{err}1 new variable name invalid
+{p 4 4 2}
+You attempted to rename {bf:age} to {bf:15}{err}.
+That is an invalid Stata variable name.
+{p_end}
+{txt}{search r(198), local:r(198);}
+
+{com}. rename age_fifteen_to_nineteen
+{res}{err}syntax error
+    Syntax is
+        {bf:rename}  {it:oldname}    {it:newname}   [{bf:, renumber}[{bf:(}{it:#}{bf:)}] {bf:addnumber}[{bf:(}{it:#}{bf:)}] {bf:sort} ...]
+        {bf:rename (}{it:oldnames}{bf:) (}{it:newnames}{bf:)} [{bf:, renumber}[{bf:(}{it:#}{bf:)}] {bf:addnumber}[{bf:(}{it:#}{bf:)}] {bf:sort} ...]
+        {bf:rename}  {it:oldnames}              {bf:,} {{bf:upper}|{bf:lower}|{bf:proper}}
+{txt}{search r(198), local:r(198);}
+
+{com}. rename age fifteen_to_nineteen
+{res}
+{com}. rename H twentyToTwentyFour
+{res}
+{com}. rename fifteen_to_nineteen fifteenToNineteen
+{res}
+{com}. rename I twentyFiveToTwentyNine
+{res}
+{com}. rename J thirtyFiveToThirtyNine
+{res}
+{com}. rename thirtyFiveToThirtyNine thirtyToThirtyFour
+{res}
+{com}. 
+. 
+. rename K thirtyFiveToThirtyNine
+{res}
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. rename L fortyToFortyFour
+{res}
+{com}. rename M fortyFiveToFortyNine
+{res}
+{com}. rename Value proportionOfRespondantsInAge
+{res}
+{com}. rename proportionOfRespondantsInAge proportionOfRespondentInAge
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge NeverMarried fifteenToNineteen twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine
+{txt}note: NeverMarried omitted because of collinearity
+note: fortyToFortyFour omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         AgeofFirstMarriage{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      t{col 61}   P>|t|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 21}Reform {c |}{col 29}{res}{space 2} 1.174633{col 41}{space 2} .3517147{col 52}{space 1}    3.34{col 61}{space 3}0.002{col 69}{space 4} .4678362{col 82}{space 3} 1.881431
+{txt}proportionOfRespondentInAge {c |}{col 29}{res}{space 2} .1378008{col 41}{space 2} .0079368{col 52}{space 1}   17.36{col 61}{space 3}0.000{col 69}{space 4} .1218512{col 82}{space 3} .1537505
+{txt}{space 15}NeverMarried {c |}{col 29}{res}{space 2}        0{col 41}{txt}  (omitted)
+{space 10}fifteenToNineteen {c |}{col 29}{res}{space 2} 3.974969{col 41}{space 2} 1.141757{col 52}{space 1}    3.48{col 61}{space 3}0.001{col 69}{space 4} 1.680521{col 82}{space 3} 6.269416
+{txt}{space 9}twentyToTwentyFour {c |}{col 29}{res}{space 2}  2.39737{col 41}{space 2} .7313424{col 52}{space 1}    3.28{col 61}{space 3}0.002{col 69}{space 4} .9276819{col 82}{space 3} 3.867057
+{txt}{space 5}twentyFiveToTwentyNine {c |}{col 29}{res}{space 2} 1.858933{col 41}{space 2} .5974355{col 52}{space 1}    3.11{col 61}{space 3}0.003{col 69}{space 4} .6583417{col 82}{space 3} 3.059525
+{txt}{space 9}thirtyToThirtyFour {c |}{col 29}{res}{space 2} .5553374{col 41}{space 2} .5886329{col 52}{space 1}    0.94{col 61}{space 3}0.350{col 69}{space 4}-.6275647{col 82}{space 3} 1.738239
+{txt}{space 5}thirtyFiveToThirtyNine {c |}{col 29}{res}{space 2} .5553374{col 41}{space 2} .5886329{col 52}{space 1}    0.94{col 61}{space 3}0.350{col 69}{space 4}-.6275647{col 82}{space 3} 1.738239
+{txt}{space 11}fortyToFortyFour {c |}{col 29}{res}{space 2}        0{col 41}{txt}  (omitted)
+{space 7}fortyFiveToFortyNine {c |}{col 29}{res}{space 2} .1860311{col 41}{space 2} .5878609{col 52}{space 1}    0.32{col 61}{space 3}0.753{col 69}{space 4}-.9953195{col 82}{space 3} 1.367382
+{txt}{space 22}_cons {c |}{col 29}{res}{space 2} 9.052816{col 41}{space 2} .7746412{col 52}{space 1}   11.69{col 61}{space 3}0.000{col 69}{space 4} 7.496116{col 82}{space 3} 10.60952
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         AgeofFirstMarriage{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      t{col 61}   P>|t|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 21}Reform {c |}{col 29}{res}{space 2} 1.174633{col 41}{space 2} .3517147{col 52}{space 1}    3.34{col 61}{space 3}0.002{col 69}{space 4} .4678362{col 82}{space 3} 1.881431
+{txt}proportionOfRespondentInAge {c |}{col 29}{res}{space 2} .1378008{col 41}{space 2} .0079368{col 52}{space 1}   17.36{col 61}{space 3}0.000{col 69}{space 4} .1218512{col 82}{space 3} .1537505
+{txt}{space 9}twentyToTwentyFour {c |}{col 29}{res}{space 2}-1.577599{col 41}{space 2} 1.100595{col 52}{space 1}   -1.43{col 61}{space 3}0.158{col 69}{space 4}-3.789328{col 82}{space 3}   .63413
+{txt}{space 5}twentyFiveToTwentyNine {c |}{col 29}{res}{space 2}-2.116035{col 41}{space 2} 1.097443{col 52}{space 1}   -1.93{col 61}{space 3}0.060{col 69}{space 4} -4.32143{col 82}{space 3} .0893587
+{txt}{space 9}thirtyToThirtyFour {c |}{col 29}{res}{space 2}-3.419631{col 41}{space 2} 1.127637{col 52}{space 1}   -3.03{col 61}{space 3}0.004{col 69}{space 4}-5.685702{col 82}{space 3} -1.15356
+{txt}{space 5}thirtyFiveToThirtyNine {c |}{col 29}{res}{space 2}-3.419631{col 41}{space 2} 1.127637{col 52}{space 1}   -3.03{col 61}{space 3}0.004{col 69}{space 4}-5.685702{col 82}{space 3} -1.15356
+{txt}{space 11}fortyToFortyFour {c |}{col 29}{res}{space 2}-3.974969{col 41}{space 2} 1.141757{col 52}{space 1}   -3.48{col 61}{space 3}0.001{col 69}{space 4}-6.269416{col 82}{space 3}-1.680521
+{txt}{space 7}fortyFiveToFortyNine {c |}{col 29}{res}{space 2}-3.788938{col 41}{space 2} 1.136947{col 52}{space 1}   -3.33{col 61}{space 3}0.002{col 69}{space 4}-6.073717{col 82}{space 3}-1.504158
+{txt}{space 22}_cons {c |}{col 29}{res}{space 2} 13.02778{col 41}{space 2} .9520236{col 52}{space 1}   13.68{col 61}{space 3}0.000{col 69}{space 4} 11.11462{col 82}{space 3} 14.94095
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(2, 55)        = {res}   120.26
+{txt}       Model {c |} {res} 551.873937         2  275.936969   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 126.195028        55  2.29445506   {txt}R-squared       ={res}    0.8139
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8071
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.5147
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         AgeofFirstMarriage{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      t{col 61}   P>|t|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 21}Reform {c |}{col 29}{res}{space 2} 1.005906{col 41}{space 2} .4030448{col 52}{space 1}    2.50{col 61}{space 3}0.016{col 69}{space 4} .1981866{col 82}{space 3} 1.813626
+{txt}proportionOfRespondentInAge {c |}{col 29}{res}{space 2} .1180068{col 41}{space 2}  .007609{col 52}{space 1}   15.51{col 61}{space 3}0.000{col 69}{space 4} .1027581{col 82}{space 3} .1332556
+{txt}{space 22}_cons {c |}{col 29}{res}{space 2} 11.36154{col 41}{space 2} .6002989{col 52}{space 1}   18.93{col 61}{space 3}0.000{col 69}{space 4} 10.15851{col 82}{space 3} 12.56456
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         AgeofFirstMarriage{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      t{col 61}   P>|t|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 21}Reform {c |}{col 29}{res}{space 2} 1.174633{col 41}{space 2} .3517147{col 52}{space 1}    3.34{col 61}{space 3}0.002{col 69}{space 4} .4678362{col 82}{space 3} 1.881431
+{txt}proportionOfRespondentInAge {c |}{col 29}{res}{space 2} .1378008{col 41}{space 2} .0079368{col 52}{space 1}   17.36{col 61}{space 3}0.000{col 69}{space 4} .1218512{col 82}{space 3} .1537505
+{txt}{space 9}twentyToTwentyFour {c |}{col 29}{res}{space 2}-1.577599{col 41}{space 2} 1.100595{col 52}{space 1}   -1.43{col 61}{space 3}0.158{col 69}{space 4}-3.789328{col 82}{space 3}   .63413
+{txt}{space 5}twentyFiveToTwentyNine {c |}{col 29}{res}{space 2}-2.116035{col 41}{space 2} 1.097443{col 52}{space 1}   -1.93{col 61}{space 3}0.060{col 69}{space 4} -4.32143{col 82}{space 3} .0893587
+{txt}{space 9}thirtyToThirtyFour {c |}{col 29}{res}{space 2}-3.419631{col 41}{space 2} 1.127637{col 52}{space 1}   -3.03{col 61}{space 3}0.004{col 69}{space 4}-5.685702{col 82}{space 3} -1.15356
+{txt}{space 5}thirtyFiveToThirtyNine {c |}{col 29}{res}{space 2}-3.419631{col 41}{space 2} 1.127637{col 52}{space 1}   -3.03{col 61}{space 3}0.004{col 69}{space 4}-5.685702{col 82}{space 3} -1.15356
+{txt}{space 11}fortyToFortyFour {c |}{col 29}{res}{space 2}-3.974969{col 41}{space 2} 1.141757{col 52}{space 1}   -3.48{col 61}{space 3}0.001{col 69}{space 4}-6.269416{col 82}{space 3}-1.680521
+{txt}{space 7}fortyFiveToFortyNine {c |}{col 29}{res}{space 2}-3.788938{col 41}{space 2} 1.136947{col 52}{space 1}   -3.33{col 61}{space 3}0.002{col 69}{space 4}-6.073717{col 82}{space 3}-1.504158
+{txt}{space 22}_cons {c |}{col 29}{res}{space 2} 13.02778{col 41}{space 2} .9520236{col 52}{space 1}   13.68{col 61}{space 3}0.000{col 69}{space 4} 11.11462{col 82}{space 3} 14.94095
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         AgeofFirstMarriage{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      t{col 61}   P>|t|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 21}Reform {c |}{col 29}{res}{space 2} 1.174633{col 41}{space 2} .3517147{col 52}{space 1}    3.34{col 61}{space 3}0.002{col 69}{space 4} .4678362{col 82}{space 3} 1.881431
+{txt}proportionOfRespondentInAge {c |}{col 29}{res}{space 2} .1378008{col 41}{space 2} .0079368{col 52}{space 1}   17.36{col 61}{space 3}0.000{col 69}{space 4} .1218512{col 82}{space 3} .1537505
+{txt}{space 9}twentyToTwentyFour {c |}{col 29}{res}{space 2}-1.577599{col 41}{space 2} 1.100595{col 52}{space 1}   -1.43{col 61}{space 3}0.158{col 69}{space 4}-3.789328{col 82}{space 3}   .63413
+{txt}{space 5}twentyFiveToTwentyNine {c |}{col 29}{res}{space 2}-2.116035{col 41}{space 2} 1.097443{col 52}{space 1}   -1.93{col 61}{space 3}0.060{col 69}{space 4} -4.32143{col 82}{space 3} .0893587
+{txt}{space 9}thirtyToThirtyFour {c |}{col 29}{res}{space 2}-3.419631{col 41}{space 2} 1.127637{col 52}{space 1}   -3.03{col 61}{space 3}0.004{col 69}{space 4}-5.685702{col 82}{space 3} -1.15356
+{txt}{space 5}thirtyFiveToThirtyNine {c |}{col 29}{res}{space 2}-3.419631{col 41}{space 2} 1.127637{col 52}{space 1}   -3.03{col 61}{space 3}0.004{col 69}{space 4}-5.685702{col 82}{space 3} -1.15356
+{txt}{space 11}fortyToFortyFour {c |}{col 29}{res}{space 2}-3.974969{col 41}{space 2} 1.141757{col 52}{space 1}   -3.48{col 61}{space 3}0.001{col 69}{space 4}-6.269416{col 82}{space 3}-1.680521
+{txt}{space 7}fortyFiveToFortyNine {c |}{col 29}{res}{space 2}-3.788938{col 41}{space 2} 1.136947{col 52}{space 1}   -3.33{col 61}{space 3}0.002{col 69}{space 4}-6.073717{col 82}{space 3}-1.504158
+{txt}{space 22}_cons {c |}{col 29}{res}{space 2} 13.02778{col 41}{space 2} .9520236{col 52}{space 1}   13.68{col 61}{space 3}0.000{col 69}{space 4} 11.11462{col 82}{space 3} 14.94095
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         AgeofFirstMarriage{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      t{col 61}   P>|t|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 21}Reform {c |}{col 29}{res}{space 2} 1.174633{col 41}{space 2} .3517147{col 52}{space 1}    3.34{col 61}{space 3}0.002{col 69}{space 4} .4678362{col 82}{space 3} 1.881431
+{txt}proportionOfRespondentInAge {c |}{col 29}{res}{space 2} .1378008{col 41}{space 2} .0079368{col 52}{space 1}   17.36{col 61}{space 3}0.000{col 69}{space 4} .1218512{col 82}{space 3} .1537505
+{txt}{space 9}twentyToTwentyFour {c |}{col 29}{res}{space 2}-1.577599{col 41}{space 2} 1.100595{col 52}{space 1}   -1.43{col 61}{space 3}0.158{col 69}{space 4}-3.789328{col 82}{space 3}   .63413
+{txt}{space 5}twentyFiveToTwentyNine {c |}{col 29}{res}{space 2}-2.116035{col 41}{space 2} 1.097443{col 52}{space 1}   -1.93{col 61}{space 3}0.060{col 69}{space 4} -4.32143{col 82}{space 3} .0893587
+{txt}{space 9}thirtyToThirtyFour {c |}{col 29}{res}{space 2}-3.419631{col 41}{space 2} 1.127637{col 52}{space 1}   -3.03{col 61}{space 3}0.004{col 69}{space 4}-5.685702{col 82}{space 3} -1.15356
+{txt}{space 5}thirtyFiveToThirtyNine {c |}{col 29}{res}{space 2}-3.419631{col 41}{space 2} 1.127637{col 52}{space 1}   -3.03{col 61}{space 3}0.004{col 69}{space 4}-5.685702{col 82}{space 3} -1.15356
+{txt}{space 11}fortyToFortyFour {c |}{col 29}{res}{space 2}-3.974969{col 41}{space 2} 1.141757{col 52}{space 1}   -3.48{col 61}{space 3}0.001{col 69}{space 4}-6.269416{col 82}{space 3}-1.680521
+{txt}{space 7}fortyFiveToFortyNine {c |}{col 29}{res}{space 2}-3.788938{col 41}{space 2} 1.136947{col 52}{space 1}   -3.33{col 61}{space 3}0.002{col 69}{space 4}-6.073717{col 82}{space 3}-1.504158
+{txt}{space 22}_cons {c |}{col 29}{res}{space 2} 13.02778{col 41}{space 2} .9520236{col 52}{space 1}   13.68{col 61}{space 3}0.000{col 69}{space 4} 11.11462{col 82}{space 3} 14.94095
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         AgeofFirstMarriage{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      t{col 61}   P>|t|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 21}Reform {c |}{col 29}{res}{space 2} 1.174633{col 41}{space 2} .3517147{col 52}{space 1}    3.34{col 61}{space 3}0.002{col 69}{space 4} .4678362{col 82}{space 3} 1.881431
+{txt}proportionOfRespondentInAge {c |}{col 29}{res}{space 2} .1378008{col 41}{space 2} .0079368{col 52}{space 1}   17.36{col 61}{space 3}0.000{col 69}{space 4} .1218512{col 82}{space 3} .1537505
+{txt}{space 9}twentyToTwentyFour {c |}{col 29}{res}{space 2}-1.577599{col 41}{space 2} 1.100595{col 52}{space 1}   -1.43{col 61}{space 3}0.158{col 69}{space 4}-3.789328{col 82}{space 3}   .63413
+{txt}{space 5}twentyFiveToTwentyNine {c |}{col 29}{res}{space 2}-2.116035{col 41}{space 2} 1.097443{col 52}{space 1}   -1.93{col 61}{space 3}0.060{col 69}{space 4} -4.32143{col 82}{space 3} .0893587
+{txt}{space 9}thirtyToThirtyFour {c |}{col 29}{res}{space 2}-3.419631{col 41}{space 2} 1.127637{col 52}{space 1}   -3.03{col 61}{space 3}0.004{col 69}{space 4}-5.685702{col 82}{space 3} -1.15356
+{txt}{space 5}thirtyFiveToThirtyNine {c |}{col 29}{res}{space 2}-3.419631{col 41}{space 2} 1.127637{col 52}{space 1}   -3.03{col 61}{space 3}0.004{col 69}{space 4}-5.685702{col 82}{space 3} -1.15356
+{txt}{space 11}fortyToFortyFour {c |}{col 29}{res}{space 2}-3.974969{col 41}{space 2} 1.141757{col 52}{space 1}   -3.48{col 61}{space 3}0.001{col 69}{space 4}-6.269416{col 82}{space 3}-1.680521
+{txt}{space 7}fortyFiveToFortyNine {c |}{col 29}{res}{space 2}-3.788938{col 41}{space 2} 1.136947{col 52}{space 1}   -3.33{col 61}{space 3}0.002{col 69}{space 4}-6.073717{col 82}{space 3}-1.504158
+{txt}{space 22}_cons {c |}{col 29}{res}{space 2} 13.02778{col 41}{space 2} .9520236{col 52}{space 1}   13.68{col 61}{space 3}0.000{col 69}{space 4} 11.11462{col 82}{space 3} 14.94095
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         AgeofFirstMarriage{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      t{col 61}   P>|t|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 21}Reform {c |}{col 29}{res}{space 2} 1.174633{col 41}{space 2} .3517147{col 52}{space 1}    3.34{col 61}{space 3}0.002{col 69}{space 4} .4678362{col 82}{space 3} 1.881431
+{txt}proportionOfRespondentInAge {c |}{col 29}{res}{space 2} .1378008{col 41}{space 2} .0079368{col 52}{space 1}   17.36{col 61}{space 3}0.000{col 69}{space 4} .1218512{col 82}{space 3} .1537505
+{txt}{space 9}twentyToTwentyFour {c |}{col 29}{res}{space 2}-1.577599{col 41}{space 2} 1.100595{col 52}{space 1}   -1.43{col 61}{space 3}0.158{col 69}{space 4}-3.789328{col 82}{space 3}   .63413
+{txt}{space 5}twentyFiveToTwentyNine {c |}{col 29}{res}{space 2}-2.116035{col 41}{space 2} 1.097443{col 52}{space 1}   -1.93{col 61}{space 3}0.060{col 69}{space 4} -4.32143{col 82}{space 3} .0893587
+{txt}{space 9}thirtyToThirtyFour {c |}{col 29}{res}{space 2}-3.419631{col 41}{space 2} 1.127637{col 52}{space 1}   -3.03{col 61}{space 3}0.004{col 69}{space 4}-5.685702{col 82}{space 3} -1.15356
+{txt}{space 5}thirtyFiveToThirtyNine {c |}{col 29}{res}{space 2}-3.419631{col 41}{space 2} 1.127637{col 52}{space 1}   -3.03{col 61}{space 3}0.004{col 69}{space 4}-5.685702{col 82}{space 3} -1.15356
+{txt}{space 11}fortyToFortyFour {c |}{col 29}{res}{space 2}-3.974969{col 41}{space 2} 1.141757{col 52}{space 1}   -3.48{col 61}{space 3}0.001{col 69}{space 4}-6.269416{col 82}{space 3}-1.680521
+{txt}{space 7}fortyFiveToFortyNine {c |}{col 29}{res}{space 2}-3.788938{col 41}{space 2} 1.136947{col 52}{space 1}   -3.33{col 61}{space 3}0.002{col 69}{space 4}-6.073717{col 82}{space 3}-1.504158
+{txt}{space 22}_cons {c |}{col 29}{res}{space 2} 13.02778{col 41}{space 2} .9520236{col 52}{space 1}   13.68{col 61}{space 3}0.000{col 69}{space 4} 11.11462{col 82}{space 3} 14.94095
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge NeverMarried fifteenToNineteen twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine
+{txt}note: NeverMarried omitted because of collinearity
+note: fortyToFortyFour omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         AgeofFirstMarriage{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      t{col 61}   P>|t|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 21}Reform {c |}{col 29}{res}{space 2} 1.174633{col 41}{space 2} .3517147{col 52}{space 1}    3.34{col 61}{space 3}0.002{col 69}{space 4} .4678362{col 82}{space 3} 1.881431
+{txt}proportionOfRespondentInAge {c |}{col 29}{res}{space 2} .1378008{col 41}{space 2} .0079368{col 52}{space 1}   17.36{col 61}{space 3}0.000{col 69}{space 4} .1218512{col 82}{space 3} .1537505
+{txt}{space 15}NeverMarried {c |}{col 29}{res}{space 2}        0{col 41}{txt}  (omitted)
+{space 10}fifteenToNineteen {c |}{col 29}{res}{space 2} 3.974969{col 41}{space 2} 1.141757{col 52}{space 1}    3.48{col 61}{space 3}0.001{col 69}{space 4} 1.680521{col 82}{space 3} 6.269416
+{txt}{space 9}twentyToTwentyFour {c |}{col 29}{res}{space 2}  2.39737{col 41}{space 2} .7313424{col 52}{space 1}    3.28{col 61}{space 3}0.002{col 69}{space 4} .9276819{col 82}{space 3} 3.867057
+{txt}{space 5}twentyFiveToTwentyNine {c |}{col 29}{res}{space 2} 1.858933{col 41}{space 2} .5974355{col 52}{space 1}    3.11{col 61}{space 3}0.003{col 69}{space 4} .6583417{col 82}{space 3} 3.059525
+{txt}{space 9}thirtyToThirtyFour {c |}{col 29}{res}{space 2} .5553374{col 41}{space 2} .5886329{col 52}{space 1}    0.94{col 61}{space 3}0.350{col 69}{space 4}-.6275647{col 82}{space 3} 1.738239
+{txt}{space 5}thirtyFiveToThirtyNine {c |}{col 29}{res}{space 2} .5553374{col 41}{space 2} .5886329{col 52}{space 1}    0.94{col 61}{space 3}0.350{col 69}{space 4}-.6275647{col 82}{space 3} 1.738239
+{txt}{space 11}fortyToFortyFour {c |}{col 29}{res}{space 2}        0{col 41}{txt}  (omitted)
+{space 7}fortyFiveToFortyNine {c |}{col 29}{res}{space 2} .1860311{col 41}{space 2} .5878609{col 52}{space 1}    0.32{col 61}{space 3}0.753{col 69}{space 4}-.9953195{col 82}{space 3} 1.367382
+{txt}{space 22}_cons {c |}{col 29}{res}{space 2} 9.052816{col 41}{space 2} .7746412{col 52}{space 1}   11.69{col 61}{space 3}0.000{col 69}{space 4} 7.496116{col 82}{space 3} 10.60952
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         AgeofFirstMarriage{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      t{col 61}   P>|t|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 21}Reform {c |}{col 29}{res}{space 2} 1.174633{col 41}{space 2} .3517147{col 52}{space 1}    3.34{col 61}{space 3}0.002{col 69}{space 4} .4678362{col 82}{space 3} 1.881431
+{txt}proportionOfRespondentInAge {c |}{col 29}{res}{space 2} .1378008{col 41}{space 2} .0079368{col 52}{space 1}   17.36{col 61}{space 3}0.000{col 69}{space 4} .1218512{col 82}{space 3} .1537505
+{txt}{space 9}twentyToTwentyFour {c |}{col 29}{res}{space 2}-1.577599{col 41}{space 2} 1.100595{col 52}{space 1}   -1.43{col 61}{space 3}0.158{col 69}{space 4}-3.789328{col 82}{space 3}   .63413
+{txt}{space 5}twentyFiveToTwentyNine {c |}{col 29}{res}{space 2}-2.116035{col 41}{space 2} 1.097443{col 52}{space 1}   -1.93{col 61}{space 3}0.060{col 69}{space 4} -4.32143{col 82}{space 3} .0893587
+{txt}{space 9}thirtyToThirtyFour {c |}{col 29}{res}{space 2}-3.419631{col 41}{space 2} 1.127637{col 52}{space 1}   -3.03{col 61}{space 3}0.004{col 69}{space 4}-5.685702{col 82}{space 3} -1.15356
+{txt}{space 5}thirtyFiveToThirtyNine {c |}{col 29}{res}{space 2}-3.419631{col 41}{space 2} 1.127637{col 52}{space 1}   -3.03{col 61}{space 3}0.004{col 69}{space 4}-5.685702{col 82}{space 3} -1.15356
+{txt}{space 11}fortyToFortyFour {c |}{col 29}{res}{space 2}-3.974969{col 41}{space 2} 1.141757{col 52}{space 1}   -3.48{col 61}{space 3}0.001{col 69}{space 4}-6.269416{col 82}{space 3}-1.680521
+{txt}{space 7}fortyFiveToFortyNine {c |}{col 29}{res}{space 2}-3.788938{col 41}{space 2} 1.136947{col 52}{space 1}   -3.33{col 61}{space 3}0.002{col 69}{space 4}-6.073717{col 82}{space 3}-1.504158
+{txt}{space 22}_cons {c |}{col 29}{res}{space 2} 13.02778{col 41}{space 2} .9520236{col 52}{space 1}   13.68{col 61}{space 3}0.000{col 69}{space 4} 11.11462{col 82}{space 3} 14.94095
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge NeverMarried fifteenToNineteen twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine
+{txt}note: NeverMarried omitted because of collinearity
+note: fortyToFortyFour omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         AgeofFirstMarriage{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      t{col 61}   P>|t|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 21}Reform {c |}{col 29}{res}{space 2} 1.174633{col 41}{space 2} .3517147{col 52}{space 1}    3.34{col 61}{space 3}0.002{col 69}{space 4} .4678362{col 82}{space 3} 1.881431
+{txt}proportionOfRespondentInAge {c |}{col 29}{res}{space 2} .1378008{col 41}{space 2} .0079368{col 52}{space 1}   17.36{col 61}{space 3}0.000{col 69}{space 4} .1218512{col 82}{space 3} .1537505
+{txt}{space 15}NeverMarried {c |}{col 29}{res}{space 2}        0{col 41}{txt}  (omitted)
+{space 10}fifteenToNineteen {c |}{col 29}{res}{space 2} 3.974969{col 41}{space 2} 1.141757{col 52}{space 1}    3.48{col 61}{space 3}0.001{col 69}{space 4} 1.680521{col 82}{space 3} 6.269416
+{txt}{space 9}twentyToTwentyFour {c |}{col 29}{res}{space 2}  2.39737{col 41}{space 2} .7313424{col 52}{space 1}    3.28{col 61}{space 3}0.002{col 69}{space 4} .9276819{col 82}{space 3} 3.867057
+{txt}{space 5}twentyFiveToTwentyNine {c |}{col 29}{res}{space 2} 1.858933{col 41}{space 2} .5974355{col 52}{space 1}    3.11{col 61}{space 3}0.003{col 69}{space 4} .6583417{col 82}{space 3} 3.059525
+{txt}{space 9}thirtyToThirtyFour {c |}{col 29}{res}{space 2} .5553374{col 41}{space 2} .5886329{col 52}{space 1}    0.94{col 61}{space 3}0.350{col 69}{space 4}-.6275647{col 82}{space 3} 1.738239
+{txt}{space 5}thirtyFiveToThirtyNine {c |}{col 29}{res}{space 2} .5553374{col 41}{space 2} .5886329{col 52}{space 1}    0.94{col 61}{space 3}0.350{col 69}{space 4}-.6275647{col 82}{space 3} 1.738239
+{txt}{space 11}fortyToFortyFour {c |}{col 29}{res}{space 2}        0{col 41}{txt}  (omitted)
+{space 7}fortyFiveToFortyNine {c |}{col 29}{res}{space 2} .1860311{col 41}{space 2} .5878609{col 52}{space 1}    0.32{col 61}{space 3}0.753{col 69}{space 4}-.9953195{col 82}{space 3} 1.367382
+{txt}{space 22}_cons {c |}{col 29}{res}{space 2} 9.052816{col 41}{space 2} .7746412{col 52}{space 1}   11.69{col 61}{space 3}0.000{col 69}{space 4} 7.496116{col 82}{space 3} 10.60952
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg proportionOfRespondentInAge Reform AgeofFirstMarriage twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    58.87
+{txt}       Model {c |} {res} 36849.7022         8  4606.21277   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3834.02887        49  78.2454872   {txt}R-squared       ={res}    0.9058
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8904
+{txt}       Total {c |} {res}  40683.731        57  713.749667   {txt}Root MSE        =   {res} 8.8456
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}proportionOfResponde~e{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 16}Reform {c |}{col 24}{res}{space 2}-8.524138{col 36}{space 2} 2.322981{col 47}{space 1}   -3.67{col 56}{space 3}0.001{col 64}{space 4}-13.19234{col 77}{space 3}-3.855933
+{txt}{space 4}AgeofFirstMarriage {c |}{col 24}{res}{space 2} 6.242181{col 36}{space 2} .3595277{col 47}{space 1}   17.36{col 56}{space 3}0.000{col 64}{space 4} 5.519683{col 77}{space 3} 6.964679
+{txt}{space 4}twentyToTwentyFour {c |}{col 24}{res}{space 2} 14.15419{col 36}{space 2} 7.285797{col 47}{space 1}    1.94{col 56}{space 3}0.058{col 64}{space 4}-.4871727{col 77}{space 3} 28.79554
+{txt}twentyFiveToTwentyNine {c |}{col 24}{res}{space 2}  20.4291{col 36}{space 2} 7.083699{col 47}{space 1}    2.88{col 56}{space 3}0.006{col 64}{space 4}  6.19387{col 77}{space 3} 34.66432
+{txt}{space 4}thirtyToThirtyFour {c |}{col 24}{res}{space 2}  29.8891{col 36}{space 2} 7.083699{col 47}{space 1}    4.22{col 56}{space 3}0.000{col 64}{space 4} 15.65387{col 77}{space 3} 44.12432
+{txt}thirtyFiveToThirtyNine {c |}{col 24}{res}{space 2}  29.8891{col 36}{space 2} 7.083699{col 47}{space 1}    4.22{col 56}{space 3}0.000{col 64}{space 4} 15.65387{col 77}{space 3} 44.12432
+{txt}{space 6}fortyToFortyFour {c |}{col 24}{res}{space 2}  33.9191{col 36}{space 2} 7.083699{col 47}{space 1}    4.79{col 56}{space 3}0.000{col 64}{space 4} 19.68387{col 77}{space 3} 48.15432
+{txt}{space 2}fortyFiveToFortyNine {c |}{col 24}{res}{space 2}  32.5691{col 36}{space 2} 7.083699{col 47}{space 1}    4.60{col 56}{space 3}0.000{col 64}{space 4} 18.33387{col 77}{space 3} 46.80432
+{txt}{space 17}_cons {c |}{col 24}{res}{space 2}-79.32064{col 36}{space 2} 8.339984{col 47}{space 1}   -9.51{col 56}{space 3}0.000{col 64}{space 4}-96.08047{col 77}{space 3}-62.56081
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg proportionOfRespondentInAge Reform AgeofFirstMarriage fifteenToNineteen twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine
+{txt}note: twentyToTwentyFour omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    58.87
+{txt}       Model {c |} {res} 36849.7022         8  4606.21277   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3834.02887        49  78.2454872   {txt}R-squared       ={res}    0.9058
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8904
+{txt}       Total {c |} {res}  40683.731        57  713.749667   {txt}Root MSE        =   {res} 8.8456
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}proportionOfResponde~e{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 16}Reform {c |}{col 24}{res}{space 2}-8.524138{col 36}{space 2} 2.322981{col 47}{space 1}   -3.67{col 56}{space 3}0.001{col 64}{space 4}-13.19234{col 77}{space 3}-3.855933
+{txt}{space 4}AgeofFirstMarriage {c |}{col 24}{res}{space 2} 6.242181{col 36}{space 2} .3595277{col 47}{space 1}   17.36{col 56}{space 3}0.000{col 64}{space 4} 5.519683{col 77}{space 3} 6.964679
+{txt}{space 5}fifteenToNineteen {c |}{col 24}{res}{space 2}-14.15419{col 36}{space 2} 7.285797{col 47}{space 1}   -1.94{col 56}{space 3}0.058{col 64}{space 4}-28.79554{col 77}{space 3} .4871727
+{txt}{space 4}twentyToTwentyFour {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+twentyFiveToTwentyNine {c |}{col 24}{res}{space 2} 6.274912{col 36}{space 2} 4.644267{col 47}{space 1}    1.35{col 56}{space 3}0.183{col 64}{space 4}-3.058091{col 77}{space 3} 15.60792
+{txt}{space 4}thirtyToThirtyFour {c |}{col 24}{res}{space 2} 15.73491{col 36}{space 2} 4.644267{col 47}{space 1}    3.39{col 56}{space 3}0.001{col 64}{space 4} 6.401909{col 77}{space 3} 25.06792
+{txt}thirtyFiveToThirtyNine {c |}{col 24}{res}{space 2} 15.73491{col 36}{space 2} 4.644267{col 47}{space 1}    3.39{col 56}{space 3}0.001{col 64}{space 4} 6.401909{col 77}{space 3} 25.06792
+{txt}{space 6}fortyToFortyFour {c |}{col 24}{res}{space 2} 19.76491{col 36}{space 2} 4.644267{col 47}{space 1}    4.26{col 56}{space 3}0.000{col 64}{space 4} 10.43191{col 77}{space 3} 29.09792
+{txt}{space 2}fortyFiveToFortyNine {c |}{col 24}{res}{space 2} 18.41491{col 36}{space 2} 4.644267{col 47}{space 1}    3.97{col 56}{space 3}0.000{col 64}{space 4} 9.081909{col 77}{space 3} 27.74792
+{txt}{space 17}_cons {c |}{col 24}{res}{space 2}-65.16646{col 36}{space 2}  7.39821{col 47}{space 1}   -8.81{col 56}{space 3}0.000{col 64}{space 4}-80.03371{col 77}{space 3} -50.2992
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg proportionOfRespondentInAge Reform AgeofFirstMarriage fifteenToNineteen twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine NeverMarried
+{txt}note: twentyToTwentyFour omitted because of collinearity
+note: NeverMarried omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    58.87
+{txt}       Model {c |} {res} 36849.7022         8  4606.21277   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3834.02887        49  78.2454872   {txt}R-squared       ={res}    0.9058
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8904
+{txt}       Total {c |} {res}  40683.731        57  713.749667   {txt}Root MSE        =   {res} 8.8456
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}proportionOfResponde~e{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 16}Reform {c |}{col 24}{res}{space 2}-8.524138{col 36}{space 2} 2.322981{col 47}{space 1}   -3.67{col 56}{space 3}0.001{col 64}{space 4}-13.19234{col 77}{space 3}-3.855933
+{txt}{space 4}AgeofFirstMarriage {c |}{col 24}{res}{space 2} 6.242181{col 36}{space 2} .3595277{col 47}{space 1}   17.36{col 56}{space 3}0.000{col 64}{space 4} 5.519683{col 77}{space 3} 6.964679
+{txt}{space 5}fifteenToNineteen {c |}{col 24}{res}{space 2}-14.15419{col 36}{space 2} 7.285797{col 47}{space 1}   -1.94{col 56}{space 3}0.058{col 64}{space 4}-28.79554{col 77}{space 3} .4871727
+{txt}{space 4}twentyToTwentyFour {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+twentyFiveToTwentyNine {c |}{col 24}{res}{space 2} 6.274912{col 36}{space 2} 4.644267{col 47}{space 1}    1.35{col 56}{space 3}0.183{col 64}{space 4}-3.058091{col 77}{space 3} 15.60792
+{txt}{space 4}thirtyToThirtyFour {c |}{col 24}{res}{space 2} 15.73491{col 36}{space 2} 4.644267{col 47}{space 1}    3.39{col 56}{space 3}0.001{col 64}{space 4} 6.401909{col 77}{space 3} 25.06792
+{txt}thirtyFiveToThirtyNine {c |}{col 24}{res}{space 2} 15.73491{col 36}{space 2} 4.644267{col 47}{space 1}    3.39{col 56}{space 3}0.001{col 64}{space 4} 6.401909{col 77}{space 3} 25.06792
+{txt}{space 6}fortyToFortyFour {c |}{col 24}{res}{space 2} 19.76491{col 36}{space 2} 4.644267{col 47}{space 1}    4.26{col 56}{space 3}0.000{col 64}{space 4} 10.43191{col 77}{space 3} 29.09792
+{txt}{space 2}fortyFiveToFortyNine {c |}{col 24}{res}{space 2} 18.41491{col 36}{space 2} 4.644267{col 47}{space 1}    3.97{col 56}{space 3}0.000{col 64}{space 4} 9.081909{col 77}{space 3} 27.74792
+{txt}{space 10}NeverMarried {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 17}_cons {c |}{col 24}{res}{space 2}-65.16646{col 36}{space 2}  7.39821{col 47}{space 1}   -8.81{col 56}{space 3}0.000{col 64}{space 4}-80.03371{col 77}{space 3} -50.2992
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg proportionOfRespondentInAge Reform fifteenToNineteen twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine NeverMarried
+{txt}note: twentyToTwentyFour omitted because of collinearity
+note: NeverMarried omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(7, 50)        = {res}     3.45
+{txt}       Model {c |} {res} 13262.9985         7  1894.71407   {txt}Prob > F        ={res}    0.0043
+{txt}    Residual {c |} {res} 27420.7326        50  548.414651   {txt}R-squared       ={res}    0.3260
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2316
+{txt}       Total {c |} {res}  40683.731        57  713.749667   {txt}Root MSE        =   {res} 23.418
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}proportionOfResponde~e{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 16}Reform {c |}{col 24}{res}{space 2}-8.524138{col 36}{space 2} 6.149935{col 47}{space 1}   -1.39{col 56}{space 3}0.172{col 64}{space 4}-20.87665{col 77}{space 3}  3.82837
+{txt}{space 5}fifteenToNineteen {c |}{col 24}{res}{space 2}    -30.8{col 36}{space 2} 19.12092{col 47}{space 1}   -1.61{col 56}{space 3}0.114{col 64}{space 4}-69.20551{col 77}{space 3} 7.605508
+{txt}{space 4}twentyToTwentyFour {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+twentyFiveToTwentyNine {c |}{col 24}{res}{space 2}    20.84{col 36}{space 2} 12.09313{col 47}{space 1}    1.72{col 56}{space 3}0.091{col 64}{space 4}-3.449776{col 77}{space 3} 45.12978
+{txt}{space 4}thirtyToThirtyFour {c |}{col 24}{res}{space 2}     30.3{col 36}{space 2} 12.09313{col 47}{space 1}    2.51{col 56}{space 3}0.016{col 64}{space 4} 6.010224{col 77}{space 3} 54.58978
+{txt}thirtyFiveToThirtyNine {c |}{col 24}{res}{space 2}     30.3{col 36}{space 2} 12.09313{col 47}{space 1}    2.51{col 56}{space 3}0.016{col 64}{space 4} 6.010224{col 77}{space 3} 54.58978
+{txt}{space 6}fortyToFortyFour {c |}{col 24}{res}{space 2}    34.33{col 36}{space 2} 12.09313{col 47}{space 1}    2.84{col 56}{space 3}0.007{col 64}{space 4} 10.04022{col 77}{space 3} 58.61978
+{txt}{space 2}fortyFiveToFortyNine {c |}{col 24}{res}{space 2}    32.98{col 36}{space 2} 12.09313{col 47}{space 1}    2.73{col 56}{space 3}0.009{col 64}{space 4} 8.690224{col 77}{space 3} 57.26978
+{txt}{space 10}NeverMarried {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+{space 17}_cons {c |}{col 24}{res}{space 2} 45.11207{col 36}{space 2}  10.0428{col 47}{space 1}    4.49{col 56}{space 3}0.000{col 64}{space 4} 24.94051{col 77}{space 3} 65.28363
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg proportionOfRespondentInAge Reform fifteenToNineteen twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine AgeofFirstMarriage
+{txt}note: twentyToTwentyFour omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    58.87
+{txt}       Model {c |} {res} 36849.7022         8  4606.21277   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3834.02887        49  78.2454872   {txt}R-squared       ={res}    0.9058
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8904
+{txt}       Total {c |} {res}  40683.731        57  713.749667   {txt}Root MSE        =   {res} 8.8456
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}proportionOfResponde~e{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 16}Reform {c |}{col 24}{res}{space 2}-8.524138{col 36}{space 2} 2.322981{col 47}{space 1}   -3.67{col 56}{space 3}0.001{col 64}{space 4}-13.19234{col 77}{space 3}-3.855933
+{txt}{space 5}fifteenToNineteen {c |}{col 24}{res}{space 2}-14.15419{col 36}{space 2} 7.285797{col 47}{space 1}   -1.94{col 56}{space 3}0.058{col 64}{space 4}-28.79554{col 77}{space 3} .4871727
+{txt}{space 4}twentyToTwentyFour {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+twentyFiveToTwentyNine {c |}{col 24}{res}{space 2} 6.274912{col 36}{space 2} 4.644267{col 47}{space 1}    1.35{col 56}{space 3}0.183{col 64}{space 4}-3.058091{col 77}{space 3} 15.60792
+{txt}{space 4}thirtyToThirtyFour {c |}{col 24}{res}{space 2} 15.73491{col 36}{space 2} 4.644267{col 47}{space 1}    3.39{col 56}{space 3}0.001{col 64}{space 4} 6.401909{col 77}{space 3} 25.06792
+{txt}thirtyFiveToThirtyNine {c |}{col 24}{res}{space 2} 15.73491{col 36}{space 2} 4.644267{col 47}{space 1}    3.39{col 56}{space 3}0.001{col 64}{space 4} 6.401909{col 77}{space 3} 25.06792
+{txt}{space 6}fortyToFortyFour {c |}{col 24}{res}{space 2} 19.76491{col 36}{space 2} 4.644267{col 47}{space 1}    4.26{col 56}{space 3}0.000{col 64}{space 4} 10.43191{col 77}{space 3} 29.09792
+{txt}{space 2}fortyFiveToFortyNine {c |}{col 24}{res}{space 2} 18.41491{col 36}{space 2} 4.644267{col 47}{space 1}    3.97{col 56}{space 3}0.000{col 64}{space 4} 9.081909{col 77}{space 3} 27.74792
+{txt}{space 4}AgeofFirstMarriage {c |}{col 24}{res}{space 2} 6.242181{col 36}{space 2} .3595277{col 47}{space 1}   17.36{col 56}{space 3}0.000{col 64}{space 4} 5.519683{col 77}{space 3} 6.964679
+{txt}{space 17}_cons {c |}{col 24}{res}{space 2}-65.16646{col 36}{space 2}  7.39821{col 47}{space 1}   -8.81{col 56}{space 3}0.000{col 64}{space 4}-80.03371{col 77}{space 3} -50.2992
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg proportionOfRespondentInAge Reform AgeofFirstMarriage
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(2, 55)        = {res}   124.19
+{txt}       Model {c |} {res} 33308.1869         2  16654.0934   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 7375.54416        55  134.100803   {txt}R-squared       ={res}    0.8187
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8121
+{txt}       Total {c |} {res}  40683.731        57  713.749667   {txt}Root MSE        =   {res}  11.58
+
+{txt}{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}proportionOfResp~e{col 20}{c |}      Coef.{col 32}   Std. Err.{col 44}      t{col 52}   P>|t|{col 60}     [95% Con{col 73}f. Interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 12}Reform {c |}{col 20}{res}{space 2}-8.524138{col 32}{space 2} 3.041107{col 43}{space 1}   -2.80{col 52}{space 3}0.007{col 60}{space 4}-14.61865{col 73}{space 3}-2.429623
+{txt}AgeofFirstMarriage {c |}{col 20}{res}{space 2} 6.896979{col 32}{space 2} .4447119{col 43}{space 1}   15.51{col 52}{space 3}0.000{col 60}{space 4} 6.005757{col 73}{space 3} 7.788202
+{txt}{space 13}_cons {c |}{col 20}{res}{space 2}-65.38911{col 32}{space 2} 8.971738{col 43}{space 1}   -7.29{col 52}{space 3}0.000{col 60}{space 4}-83.36888{col 73}{space 3}-47.40935
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg proportionOfRespondentInAge fifteenToNineteen twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine AgeofFirstMarriage Reform
+{txt}note: twentyToTwentyFour omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    58.87
+{txt}       Model {c |} {res} 36849.7022         8  4606.21277   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3834.02887        49  78.2454872   {txt}R-squared       ={res}    0.9058
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8904
+{txt}       Total {c |} {res}  40683.731        57  713.749667   {txt}Root MSE        =   {res} 8.8456
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}proportionOfResponde~e{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 5}fifteenToNineteen {c |}{col 24}{res}{space 2}-14.15419{col 36}{space 2} 7.285797{col 47}{space 1}   -1.94{col 56}{space 3}0.058{col 64}{space 4}-28.79554{col 77}{space 3} .4871727
+{txt}{space 4}twentyToTwentyFour {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+twentyFiveToTwentyNine {c |}{col 24}{res}{space 2} 6.274912{col 36}{space 2} 4.644267{col 47}{space 1}    1.35{col 56}{space 3}0.183{col 64}{space 4}-3.058091{col 77}{space 3} 15.60792
+{txt}{space 4}thirtyToThirtyFour {c |}{col 24}{res}{space 2} 15.73491{col 36}{space 2} 4.644267{col 47}{space 1}    3.39{col 56}{space 3}0.001{col 64}{space 4} 6.401909{col 77}{space 3} 25.06792
+{txt}thirtyFiveToThirtyNine {c |}{col 24}{res}{space 2} 15.73491{col 36}{space 2} 4.644267{col 47}{space 1}    3.39{col 56}{space 3}0.001{col 64}{space 4} 6.401909{col 77}{space 3} 25.06792
+{txt}{space 6}fortyToFortyFour {c |}{col 24}{res}{space 2} 19.76491{col 36}{space 2} 4.644267{col 47}{space 1}    4.26{col 56}{space 3}0.000{col 64}{space 4} 10.43191{col 77}{space 3} 29.09792
+{txt}{space 2}fortyFiveToFortyNine {c |}{col 24}{res}{space 2} 18.41491{col 36}{space 2} 4.644267{col 47}{space 1}    3.97{col 56}{space 3}0.000{col 64}{space 4} 9.081909{col 77}{space 3} 27.74792
+{txt}{space 4}AgeofFirstMarriage {c |}{col 24}{res}{space 2} 6.242181{col 36}{space 2} .3595277{col 47}{space 1}   17.36{col 56}{space 3}0.000{col 64}{space 4} 5.519683{col 77}{space 3} 6.964679
+{txt}{space 16}Reform {c |}{col 24}{res}{space 2}-8.524138{col 36}{space 2} 2.322981{col 47}{space 1}   -3.67{col 56}{space 3}0.001{col 64}{space 4}-13.19234{col 77}{space 3}-3.855933
+{txt}{space 17}_cons {c |}{col 24}{res}{space 2}-65.16646{col 36}{space 2}  7.39821{col 47}{space 1}   -8.81{col 56}{space 3}0.000{col 64}{space 4}-80.03371{col 77}{space 3} -50.2992
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg proportionOfRespondentInAge twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine AgeofFirstMarriage Reform
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    58.87
+{txt}       Model {c |} {res} 36849.7022         8  4606.21277   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3834.02887        49  78.2454872   {txt}R-squared       ={res}    0.9058
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8904
+{txt}       Total {c |} {res}  40683.731        57  713.749667   {txt}Root MSE        =   {res} 8.8456
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}proportionOfResponde~e{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 4}twentyToTwentyFour {c |}{col 24}{res}{space 2} 14.15419{col 36}{space 2} 7.285797{col 47}{space 1}    1.94{col 56}{space 3}0.058{col 64}{space 4}-.4871727{col 77}{space 3} 28.79554
+{txt}twentyFiveToTwentyNine {c |}{col 24}{res}{space 2}  20.4291{col 36}{space 2} 7.083699{col 47}{space 1}    2.88{col 56}{space 3}0.006{col 64}{space 4}  6.19387{col 77}{space 3} 34.66432
+{txt}{space 4}thirtyToThirtyFour {c |}{col 24}{res}{space 2}  29.8891{col 36}{space 2} 7.083699{col 47}{space 1}    4.22{col 56}{space 3}0.000{col 64}{space 4} 15.65387{col 77}{space 3} 44.12432
+{txt}thirtyFiveToThirtyNine {c |}{col 24}{res}{space 2}  29.8891{col 36}{space 2} 7.083699{col 47}{space 1}    4.22{col 56}{space 3}0.000{col 64}{space 4} 15.65387{col 77}{space 3} 44.12432
+{txt}{space 6}fortyToFortyFour {c |}{col 24}{res}{space 2}  33.9191{col 36}{space 2} 7.083699{col 47}{space 1}    4.79{col 56}{space 3}0.000{col 64}{space 4} 19.68387{col 77}{space 3} 48.15432
+{txt}{space 2}fortyFiveToFortyNine {c |}{col 24}{res}{space 2}  32.5691{col 36}{space 2} 7.083699{col 47}{space 1}    4.60{col 56}{space 3}0.000{col 64}{space 4} 18.33387{col 77}{space 3} 46.80432
+{txt}{space 4}AgeofFirstMarriage {c |}{col 24}{res}{space 2} 6.242181{col 36}{space 2} .3595277{col 47}{space 1}   17.36{col 56}{space 3}0.000{col 64}{space 4} 5.519683{col 77}{space 3} 6.964679
+{txt}{space 16}Reform {c |}{col 24}{res}{space 2}-8.524138{col 36}{space 2} 2.322981{col 47}{space 1}   -3.67{col 56}{space 3}0.001{col 64}{space 4}-13.19234{col 77}{space 3}-3.855933
+{txt}{space 17}_cons {c |}{col 24}{res}{space 2}-79.32064{col 36}{space 2} 8.339984{col 47}{space 1}   -9.51{col 56}{space 3}0.000{col 64}{space 4}-96.08047{col 77}{space 3}-62.56081
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg proportionOfRespondentInAge fifteenToNineteen twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine AgeofFirstMarriage Reform
+{txt}note: twentyToTwentyFour omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    58.87
+{txt}       Model {c |} {res} 36849.7022         8  4606.21277   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3834.02887        49  78.2454872   {txt}R-squared       ={res}    0.9058
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8904
+{txt}       Total {c |} {res}  40683.731        57  713.749667   {txt}Root MSE        =   {res} 8.8456
+
+{txt}{hline 23}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}proportionOfResponde~e{col 24}{c |}      Coef.{col 36}   Std. Err.{col 48}      t{col 56}   P>|t|{col 64}     [95% Con{col 77}f. Interval]
+{hline 23}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 5}fifteenToNineteen {c |}{col 24}{res}{space 2}-14.15419{col 36}{space 2} 7.285797{col 47}{space 1}   -1.94{col 56}{space 3}0.058{col 64}{space 4}-28.79554{col 77}{space 3} .4871727
+{txt}{space 4}twentyToTwentyFour {c |}{col 24}{res}{space 2}        0{col 36}{txt}  (omitted)
+twentyFiveToTwentyNine {c |}{col 24}{res}{space 2} 6.274912{col 36}{space 2} 4.644267{col 47}{space 1}    1.35{col 56}{space 3}0.183{col 64}{space 4}-3.058091{col 77}{space 3} 15.60792
+{txt}{space 4}thirtyToThirtyFour {c |}{col 24}{res}{space 2} 15.73491{col 36}{space 2} 4.644267{col 47}{space 1}    3.39{col 56}{space 3}0.001{col 64}{space 4} 6.401909{col 77}{space 3} 25.06792
+{txt}thirtyFiveToThirtyNine {c |}{col 24}{res}{space 2} 15.73491{col 36}{space 2} 4.644267{col 47}{space 1}    3.39{col 56}{space 3}0.001{col 64}{space 4} 6.401909{col 77}{space 3} 25.06792
+{txt}{space 6}fortyToFortyFour {c |}{col 24}{res}{space 2} 19.76491{col 36}{space 2} 4.644267{col 47}{space 1}    4.26{col 56}{space 3}0.000{col 64}{space 4} 10.43191{col 77}{space 3} 29.09792
+{txt}{space 2}fortyFiveToFortyNine {c |}{col 24}{res}{space 2} 18.41491{col 36}{space 2} 4.644267{col 47}{space 1}    3.97{col 56}{space 3}0.000{col 64}{space 4} 9.081909{col 77}{space 3} 27.74792
+{txt}{space 4}AgeofFirstMarriage {c |}{col 24}{res}{space 2} 6.242181{col 36}{space 2} .3595277{col 47}{space 1}   17.36{col 56}{space 3}0.000{col 64}{space 4} 5.519683{col 77}{space 3} 6.964679
+{txt}{space 16}Reform {c |}{col 24}{res}{space 2}-8.524138{col 36}{space 2} 2.322981{col 47}{space 1}   -3.67{col 56}{space 3}0.001{col 64}{space 4}-13.19234{col 77}{space 3}-3.855933
+{txt}{space 17}_cons {c |}{col 24}{res}{space 2}-65.16646{col 36}{space 2}  7.39821{col 47}{space 1}   -8.81{col 56}{space 3}0.000{col 64}{space 4}-80.03371{col 77}{space 3} -50.2992
+{txt}{hline 23}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(2, 55)        = {res}   120.26
+{txt}       Model {c |} {res} 551.873937         2  275.936969   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 126.195028        55  2.29445506   {txt}R-squared       ={res}    0.8139
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8071
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.5147
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         AgeofFirstMarriage{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      t{col 61}   P>|t|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 21}Reform {c |}{col 29}{res}{space 2} 1.005906{col 41}{space 2} .4030448{col 52}{space 1}    2.50{col 61}{space 3}0.016{col 69}{space 4} .1981866{col 82}{space 3} 1.813626
+{txt}proportionOfRespondentInAge {c |}{col 29}{res}{space 2} .1180068{col 41}{space 2}  .007609{col 52}{space 1}   15.51{col 61}{space 3}0.000{col 69}{space 4} .1027581{col 82}{space 3} .1332556
+{txt}{space 22}_cons {c |}{col 29}{res}{space 2} 11.36154{col 41}{space 2} .6002989{col 52}{space 1}   18.93{col 61}{space 3}0.000{col 69}{space 4} 10.15851{col 82}{space 3} 12.56456
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg proportionOfRespondentInAge Reform AgeofFirstMarriage
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(2, 55)        = {res}   124.19
+{txt}       Model {c |} {res} 33308.1869         2  16654.0934   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 7375.54416        55  134.100803   {txt}R-squared       ={res}    0.8187
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8121
+{txt}       Total {c |} {res}  40683.731        57  713.749667   {txt}Root MSE        =   {res}  11.58
+
+{txt}{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}proportionOfResp~e{col 20}{c |}      Coef.{col 32}   Std. Err.{col 44}      t{col 52}   P>|t|{col 60}     [95% Con{col 73}f. Interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 12}Reform {c |}{col 20}{res}{space 2}-8.524138{col 32}{space 2} 3.041107{col 43}{space 1}   -2.80{col 52}{space 3}0.007{col 60}{space 4}-14.61865{col 73}{space 3}-2.429623
+{txt}AgeofFirstMarriage {c |}{col 20}{res}{space 2} 6.896979{col 32}{space 2} .4447119{col 43}{space 1}   15.51{col 52}{space 3}0.000{col 60}{space 4} 6.005757{col 73}{space 3} 7.788202
+{txt}{space 13}_cons {c |}{col 20}{res}{space 2}-65.38911{col 32}{space 2} 8.971738{col 43}{space 1}   -7.29{col 52}{space 3}0.000{col 60}{space 4}-83.36888{col 73}{space 3}-47.40935
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(2, 55)        = {res}   120.26
+{txt}       Model {c |} {res} 551.873937         2  275.936969   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 126.195028        55  2.29445506   {txt}R-squared       ={res}    0.8139
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8071
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.5147
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         AgeofFirstMarriage{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      t{col 61}   P>|t|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 21}Reform {c |}{col 29}{res}{space 2} 1.005906{col 41}{space 2} .4030448{col 52}{space 1}    2.50{col 61}{space 3}0.016{col 69}{space 4} .1981866{col 82}{space 3} 1.813626
+{txt}proportionOfRespondentInAge {c |}{col 29}{res}{space 2} .1180068{col 41}{space 2}  .007609{col 52}{space 1}   15.51{col 61}{space 3}0.000{col 69}{space 4} .1027581{col 82}{space 3} .1332556
+{txt}{space 22}_cons {c |}{col 29}{res}{space 2} 11.36154{col 41}{space 2} .6002989{col 52}{space 1}   18.93{col 61}{space 3}0.000{col 69}{space 4} 10.15851{col 82}{space 3} 12.56456
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge NeverMarried fifteenToNineteen twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine
+{txt}note: NeverMarried omitted because of collinearity
+note: fortyToFortyFour omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         AgeofFirstMarriage{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      t{col 61}   P>|t|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 21}Reform {c |}{col 29}{res}{space 2} 1.174633{col 41}{space 2} .3517147{col 52}{space 1}    3.34{col 61}{space 3}0.002{col 69}{space 4} .4678362{col 82}{space 3} 1.881431
+{txt}proportionOfRespondentInAge {c |}{col 29}{res}{space 2} .1378008{col 41}{space 2} .0079368{col 52}{space 1}   17.36{col 61}{space 3}0.000{col 69}{space 4} .1218512{col 82}{space 3} .1537505
+{txt}{space 15}NeverMarried {c |}{col 29}{res}{space 2}        0{col 41}{txt}  (omitted)
+{space 10}fifteenToNineteen {c |}{col 29}{res}{space 2} 3.974969{col 41}{space 2} 1.141757{col 52}{space 1}    3.48{col 61}{space 3}0.001{col 69}{space 4} 1.680521{col 82}{space 3} 6.269416
+{txt}{space 9}twentyToTwentyFour {c |}{col 29}{res}{space 2}  2.39737{col 41}{space 2} .7313424{col 52}{space 1}    3.28{col 61}{space 3}0.002{col 69}{space 4} .9276819{col 82}{space 3} 3.867057
+{txt}{space 5}twentyFiveToTwentyNine {c |}{col 29}{res}{space 2} 1.858933{col 41}{space 2} .5974355{col 52}{space 1}    3.11{col 61}{space 3}0.003{col 69}{space 4} .6583417{col 82}{space 3} 3.059525
+{txt}{space 9}thirtyToThirtyFour {c |}{col 29}{res}{space 2} .5553374{col 41}{space 2} .5886329{col 52}{space 1}    0.94{col 61}{space 3}0.350{col 69}{space 4}-.6275647{col 82}{space 3} 1.738239
+{txt}{space 5}thirtyFiveToThirtyNine {c |}{col 29}{res}{space 2} .5553374{col 41}{space 2} .5886329{col 52}{space 1}    0.94{col 61}{space 3}0.350{col 69}{space 4}-.6275647{col 82}{space 3} 1.738239
+{txt}{space 11}fortyToFortyFour {c |}{col 29}{res}{space 2}        0{col 41}{txt}  (omitted)
+{space 7}fortyFiveToFortyNine {c |}{col 29}{res}{space 2} .1860311{col 41}{space 2} .5878609{col 52}{space 1}    0.32{col 61}{space 3}0.753{col 69}{space 4}-.9953195{col 82}{space 3} 1.367382
+{txt}{space 22}_cons {c |}{col 29}{res}{space 2} 9.052816{col 41}{space 2} .7746412{col 52}{space 1}   11.69{col 61}{space 3}0.000{col 69}{space 4} 7.496116{col 82}{space 3} 10.60952
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(2, 55)        = {res}   120.26
+{txt}       Model {c |} {res} 551.873937         2  275.936969   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 126.195028        55  2.29445506   {txt}R-squared       ={res}    0.8139
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8071
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.5147
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         AgeofFirstMarriage{col 29}{c |}      Coef.{col 41}   Std. Err.{col 53}      t{col 61}   P>|t|{col 69}     [95% Con{col 82}f. Interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 21}Reform {c |}{col 29}{res}{space 2} 1.005906{col 41}{space 2} .4030448{col 52}{space 1}    2.50{col 61}{space 3}0.016{col 69}{space 4} .1981866{col 82}{space 3} 1.813626
+{txt}proportionOfRespondentInAge {c |}{col 29}{res}{space 2} .1180068{col 41}{space 2}  .007609{col 52}{space 1}   15.51{col 61}{space 3}0.000{col 69}{space 4} .1027581{col 82}{space 3} .1332556
+{txt}{space 22}_cons {c |}{col 29}{res}{space 2} 11.36154{col 41}{space 2} .6002989{col 52}{space 1}   18.93{col 61}{space 3}0.000{col 69}{space 4} 10.15851{col 82}{space 3} 12.56456
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. rename proportionOfRespondents
+{res}{err}syntax error
+    Syntax is
+        {bf:rename}  {it:oldname}    {it:newname}   [{bf:, renumber}[{bf:(}{it:#}{bf:)}] {bf:addnumber}[{bf:(}{it:#}{bf:)}] {bf:sort} ...]
+        {bf:rename (}{it:oldnames}{bf:) (}{it:newnames}{bf:)} [{bf:, renumber}[{bf:(}{it:#}{bf:)}] {bf:addnumber}[{bf:(}{it:#}{bf:)}] {bf:sort} ...]
+        {bf:rename}  {it:oldnames}              {bf:,} {{bf:upper}|{bf:lower}|{bf:proper}}
+{txt}{search r(198), local:r(198);}
+
+{com}. rename proportionOfRespondentInAge proportionOfRespondents
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondents
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(2, 55)        = {res}   120.26
+{txt}       Model {c |} {res} 551.873937         2  275.936969   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 126.195028        55  2.29445506   {txt}R-squared       ={res}    0.8139
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8071
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.5147
+
+{txt}{hline 24}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}     AgeofFirstMarriage{col 25}{c |}      Coef.{col 37}   Std. Err.{col 49}      t{col 57}   P>|t|{col 65}     [95% Con{col 78}f. Interval]
+{hline 24}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 17}Reform {c |}{col 25}{res}{space 2} 1.005906{col 37}{space 2} .4030448{col 48}{space 1}    2.50{col 57}{space 3}0.016{col 65}{space 4} .1981866{col 78}{space 3} 1.813626
+{txt}proportionOfRespondents {c |}{col 25}{res}{space 2} .1180068{col 37}{space 2}  .007609{col 48}{space 1}   15.51{col 57}{space 3}0.000{col 65}{space 4} .1027581{col 78}{space 3} .1332556
+{txt}{space 18}_cons {c |}{col 25}{res}{space 2} 11.36154{col 37}{space 2} .6002989{col 48}{space 1}   18.93{col 57}{space 3}0.000{col 65}{space 4} 10.15851{col 78}{space 3} 12.56456
+{txt}{hline 24}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondentInAge fifteenToNineteen twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine
+{err}variable {bf}proportionOfRespondentInAge{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. reg AgeofFirstMarriage Reform proportionOfRespondents fifteenToNineteen twentyToTwentyFour twentyFiveToTwentyNine thirtyToThirtyFour thirtyFiveToThirtyNine fortyToFortyFour fortyFiveToFortyNine
+{txt}note: fortyToFortyFour omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(8, 49)        = {res}    42.94
+{txt}       Model {c |} {res} 593.429889         8  74.1787361   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 84.6390764        49  1.72732809   {txt}R-squared       ={res}    0.8752
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8548
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.3143
+
+{txt}{hline 24}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}     AgeofFirstMarriage{col 25}{c |}      Coef.{col 37}   Std. Err.{col 49}      t{col 57}   P>|t|{col 65}     [95% Con{col 78}f. Interval]
+{hline 24}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 17}Reform {c |}{col 25}{res}{space 2} 1.174633{col 37}{space 2} .3517147{col 48}{space 1}    3.34{col 57}{space 3}0.002{col 65}{space 4} .4678362{col 78}{space 3} 1.881431
+{txt}proportionOfRespondents {c |}{col 25}{res}{space 2} .1378008{col 37}{space 2} .0079368{col 48}{space 1}   17.36{col 57}{space 3}0.000{col 65}{space 4} .1218512{col 78}{space 3} .1537505
+{txt}{space 6}fifteenToNineteen {c |}{col 25}{res}{space 2} 3.974969{col 37}{space 2} 1.141757{col 48}{space 1}    3.48{col 57}{space 3}0.001{col 65}{space 4} 1.680521{col 78}{space 3} 6.269416
+{txt}{space 5}twentyToTwentyFour {c |}{col 25}{res}{space 2}  2.39737{col 37}{space 2} .7313424{col 48}{space 1}    3.28{col 57}{space 3}0.002{col 65}{space 4} .9276819{col 78}{space 3} 3.867057
+{txt}{space 1}twentyFiveToTwentyNine {c |}{col 25}{res}{space 2} 1.858933{col 37}{space 2} .5974355{col 48}{space 1}    3.11{col 57}{space 3}0.003{col 65}{space 4} .6583417{col 78}{space 3} 3.059525
+{txt}{space 5}thirtyToThirtyFour {c |}{col 25}{res}{space 2} .5553374{col 37}{space 2} .5886329{col 48}{space 1}    0.94{col 57}{space 3}0.350{col 65}{space 4}-.6275647{col 78}{space 3} 1.738239
+{txt}{space 1}thirtyFiveToThirtyNine {c |}{col 25}{res}{space 2} .5553374{col 37}{space 2} .5886329{col 48}{space 1}    0.94{col 57}{space 3}0.350{col 65}{space 4}-.6275647{col 78}{space 3} 1.738239
+{txt}{space 7}fortyToFortyFour {c |}{col 25}{res}{space 2}        0{col 37}{txt}  (omitted)
+{space 3}fortyFiveToFortyNine {c |}{col 25}{res}{space 2} .1860311{col 37}{space 2} .5878609{col 48}{space 1}    0.32{col 57}{space 3}0.753{col 65}{space 4}-.9953195{col 78}{space 3} 1.367382
+{txt}{space 18}_cons {c |}{col 25}{res}{space 2} 9.052816{col 37}{space 2} .7746412{col 48}{space 1}   11.69{col 57}{space 3}0.000{col 65}{space 4} 7.496116{col 78}{space 3} 10.60952
+{txt}{hline 24}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. save "C:\Users\MDW615-CAF\Downloads\final.dta"
+{txt}file C:\Users\MDW615-CAF\Downloads\final.dta saved
+
+{com}. exit, clear

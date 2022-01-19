@@ -1,0 +1,26 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\MDW602-CAF\Downloads\final log.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 9 Apr 2021, 00:02:40
+
+{com}. reg AgeofFirstMarriage Post_Reform proportionOfRespondents estimator
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        58
+{txt}{hline 13}{c +}{hline 34}   F(3, 54)        = {res}    79.76
+{txt}       Model {c |} {res} 553.220754         3  184.406918   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 124.848212        54  2.31200392   {txt}R-squared       ={res}    0.8159
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.8056
+{txt}       Total {c |} {res} 678.068966        57  11.8959468   {txt}Root MSE        =   {res} 1.5205
+
+{txt}{hline 24}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}     AgeofFirstMarriage{col 25}{c |}      Coef.{col 37}   Std. Err.{col 49}      t{col 57}   P>|t|{col 65}     [95% Con{col 78}f. Interval]
+{hline 24}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 12}Post_Reform {c |}{col 25}{res}{space 2} .2445827{col 37}{space 2} 1.076419{col 48}{space 1}    0.23{col 57}{space 3}0.821{col 65}{space 4}-1.913507{col 78}{space 3} 2.402673
+{txt}proportionOfRespondents {c |}{col 25}{res}{space 2} .1125005{col 37}{space 2} .0105065{col 48}{space 1}   10.71{col 57}{space 3}0.000{col 65}{space 4} .0914361{col 78}{space 3} .1335648
+{txt}{space 14}estimator {c |}{col 25}{res}{space 2} .0116783{col 37}{space 2} .0153009{col 48}{space 1}    0.76{col 57}{space 3}0.449{col 65}{space 4}-.0189983{col 78}{space 3} .0423548
+{txt}{space 18}_cons {c |}{col 25}{res}{space 2} 11.74531{col 37}{space 2} .7848209{col 48}{space 1}   14.97{col 57}{space 3}0.000{col 65}{space 4} 10.17184{col 78}{space 3} 13.31878
+{txt}{hline 24}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. exit, clear
